@@ -1,0 +1,2110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>نتيجة تكليفي — خريجي كليات التمريض 2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    /* -------------------- CSS (نفس الكود السابق) -------------------- */
+    :root{
+      --bg:#F4F8F7;
+      --surface:#FFFFFF;
+      --surface-2:#F0F5F4;
+      --border:#DCE6E3;
+      --primary:#0D9488;
+      --primary-dark:#0F766E;
+      --primary-dim:rgba(13,148,136,.10);
+      --secondary:#D97706;
+      --accent-blue:#2563EB;
+      --accent-purple:#7C3AED;
+      --accent-red:#DC2626;
+      --accent-green:#16A34A;
+      --accent-orange:#EA580C;
+      --accent-yellow:#CA8A04;
+      --text:#0F1E1C;
+      --muted:#5B6E6A;
+      --radius:16px;
+      --shadow:0 1px 2px rgba(15,30,28,.04), 0 6px 20px rgba(15,30,28,.05);
+    }
+    *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+    html{scroll-behavior:smooth;}
+    html,body{background:var(--bg);}
+    body{margin:0;font-family:'Cairo',sans-serif;background:var(--bg);color:var(--text);direction:rtl;-webkit-font-smoothing:antialiased;}
+    #app{min-height:100vh;display:flex;flex-direction:column;overflow-x:hidden;}
+    main{animation:none;}
+    main.page-fade{animation:pageFade .28s ease;}
+    @keyframes pageFade{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
+    svg.icon{width:20px;height:20px;flex-shrink:0;vertical-align:middle;outline:none!important;}
+    svg.icon-lg{width:28px;height:28px;flex-shrink:0;vertical-align:middle;outline:none!important;}
+    svg.icon-sm{width:16px;height:16px;flex-shrink:0;vertical-align:middle;outline:none!important;}
+    *:focus{outline:none!important;}
+    *:focus-visible{outline:2px solid var(--primary)!important;outline-offset:2px;}
+    svg:focus,svg:focus-visible{outline:none!important;}
+    header.topbar{background:rgba(255,255,255,.9);backdrop-filter:saturate(180%) blur(10px);-webkit-backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:50;box-shadow:var(--shadow);}
+    .btn:focus,.btn:focus-visible{outline:none!important;box-shadow:none!important;}
+    .bottom-nav a:focus,.bottom-nav a:focus-visible{outline:none!important;box-shadow:none!important;}
+    .icon-wrap{position:relative;display:inline-flex;}
+    .notif-badge{position:absolute;top:-6px;right:-8px;background:var(--accent-red,#DC2626);color:#fff;font-size:10px;font-weight:800;min-width:16px;height:16px;border-radius:999px;display:flex;align-items:center;justify-content:center;padding:0 3px;line-height:1;}
+    .mobile-notif-btn{position:relative;}
+    .mobile-notif-btn .notif-badge{top:2px;right:2px;}
+    .topbar-inner{max-width:1180px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:10px;}
+    .logo{display:flex;align-items:center;gap:8px;font-weight:800;font-size:20px;color:var(--primary-dark);cursor:pointer;letter-spacing:.2px;}
+    .logo .lg-dot{color:var(--secondary);}
+    .avatar-badge{width:56px;height:56px;border-radius:14px;border:1.5px solid var(--primary);display:flex;align-items:center;justify-content:center;color:var(--primary);background:var(--primary-dim);margin:0 auto 14px;}
+    .nav-actions{display:flex;gap:8px;align-items:center;}
+    .nav-links{display:flex;gap:4px;}
+    .nav-links a{padding:8px 12px;border-radius:10px;color:var(--muted);text-decoration:none;font-size:13.5px;font-weight:700;border:1px solid transparent;display:flex;align-items:center;gap:6px;}
+    .nav-links a.active{border-color:var(--primary);color:var(--primary-dark);background:var(--primary-dim);}
+
+    .btn{border:1.5px solid var(--primary);border-radius:12px;padding:9px 18px;font-family:'Cairo',sans-serif;font-weight:700;font-size:14px;cursor:pointer;transition:transform .12s ease, box-shadow .12s ease, background .15s, border-color .15s;display:inline-flex;align-items:center;gap:7px;background:var(--surface);color:var(--primary-dark);text-decoration:none;}
+    .btn:active{transform:scale(.97);}
+    .btn-primary{border-color:var(--primary);background:var(--primary);color:#fff;}
+    .btn-secondary{border-color:var(--secondary);color:var(--secondary);background:var(--surface);}
+    .btn-ghost{background:transparent;color:var(--text);border:1.5px solid var(--border);}
+    .btn-sm{padding:6px 12px;font-size:12.5px;border-radius:9px;}
+    .btn-danger{background:var(--surface);color:var(--accent-red);border-color:var(--accent-red);}
+    .btn-block{width:100%;justify-content:center;}
+    .btn:disabled{opacity:.4;cursor:not-allowed;}
+    .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow);transition:box-shadow .2s ease;}
+    .card.accent-teal{border-color:rgba(13,148,136,.35);}
+    .card.accent-amber{border-color:rgba(217,119,6,.35);}
+    main{flex:1;max-width:1180px;margin:0 auto;padding:20px 16px 60px;width:100%;}
+    .page-title{font-size:20px;font-weight:800;display:flex;align-items:center;gap:9px;color:var(--primary-dark);margin-bottom:4px;}
+    .page-sub{color:var(--muted);font-size:13.5px;margin-bottom:18px;line-height:1.7;}
+    .empty-state{border:1.5px dashed var(--border);border-radius:14px;padding:30px 16px;text-align:center;color:var(--muted);font-size:13.5px;background:var(--surface-2);}
+    .hero{text-align:center;padding:44px 16px 30px;background:radial-gradient(60% 100% at 50% 0%, rgba(13,148,136,.08), transparent 70%);}
+    .hero .kicker{display:inline-flex;align-items:center;gap:7px;color:var(--primary-dark);background:var(--primary-dim);border:1px solid rgba(13,148,136,.3);padding:6px 14px;border-radius:999px;font-size:12.5px;font-weight:700;margin-bottom:16px;}
+    .hero h1{font-size:clamp(24px,4vw,34px);font-weight:800;margin:0 0 10px;color:var(--text);}
+    .hero h1 .hl{color:var(--primary);}
+    .hero p{color:var(--muted);margin-bottom:26px;font-size:15px;max-width:620px;margin-left:auto;margin-right:auto;}
+    .search-box{max-width:600px;margin:0 auto;display:flex;gap:8px;background:var(--surface);padding:8px;border-radius:16px;border:1.5px solid var(--primary);box-shadow:var(--shadow);}
+    .search-box input{flex:1;border:none;outline:none;padding:10px 14px;font-family:'Cairo',sans-serif;font-size:15px;background:transparent;color:var(--text);}
+    .search-box input::placeholder{color:var(--muted);}
+    .hint-list{max-width:600px;margin:22px auto 0;text-align:right;color:var(--muted);font-size:13px;line-height:2;list-style:none;padding:0;}
+    .hint-list li{margin-bottom:2px;display:flex;gap:8px;align-items:flex-start;}
+    .hint-list li svg{margin-top:3px;color:var(--primary);}
+    .stats-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;margin-top:36px;}
+    .stat{border:1px solid var(--border);border-radius:14px;padding:16px;text-align:center;background:var(--surface);box-shadow:var(--shadow);}
+    .stat b{display:block;font-size:23px;color:var(--primary-dark);}
+    .stat span{font-size:12px;color:var(--muted);}
+    .dist-wrap{max-width:760px;margin:34px auto 0;text-align:right;}
+    .dist-row{display:flex;align-items:center;gap:10px;margin-bottom:7px;font-size:12.5px;}
+    .dist-label{width:64px;flex-shrink:0;color:var(--muted);font-weight:700;}
+    .dist-bar-bg{flex:1;background:var(--surface-2);border-radius:8px;overflow:hidden;height:16px;border:1px solid var(--border);}
+    .dist-bar{height:100%;background:linear-gradient(90deg,var(--primary),var(--primary-dark));border-radius:8px;}
+    .dist-count{width:64px;flex-shrink:0;text-align:left;color:var(--text);font-weight:700;}
+    .badge{display:inline-flex;align-items:center;gap:5px;padding:4px 12px;border-radius:999px;font-size:12px;font-weight:700;border:1.3px solid;background:var(--surface);}
+    .badge-blue{border-color:var(--accent-blue);color:var(--accent-blue);}
+    .badge-green{border-color:var(--accent-green);color:var(--accent-green);}
+    .badge-red{border-color:var(--accent-red);color:var(--accent-red);}
+    .badge-gray{border-color:var(--muted);color:var(--muted);}
+    .badge-orange{border-color:var(--accent-orange);color:var(--accent-orange);}
+    .badge-purple{border-color:var(--accent-purple);color:var(--accent-purple);}
+    .badge-teal{border-color:var(--primary);color:var(--primary-dark);background:var(--primary-dim);}
+    .badge-warning{border-color:var(--accent-yellow);color:var(--accent-yellow);}
+    .badge-secondary{border-color:var(--secondary);color:var(--secondary);}
+    .result-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;}
+    @media(max-width:850px){.result-grid{grid-template-columns:1fr;}}
+    dl.result-dl{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0 0;}
+    .result-dl .pair-row{display:flex;gap:16px;}
+    .result-dl .pair-row>div{flex:1;min-width:0;}
+    dl.result-dl div.full{grid-column:1/-1;}
+    dl.result-dl dt{font-size:12px;color:var(--muted);margin-bottom:2px;}
+    dl.result-dl dd{margin:0;font-weight:700;font-size:15px;color:var(--text);}
+    .rank-hero{display:flex;align-items:center;gap:16px;padding:16px;border-radius:14px;background:var(--surface-2);border:1px solid var(--border);margin-top:14px;}
+    .rank-hero .num{font-size:34px;font-weight:800;color:var(--primary-dark);min-width:60px;text-align:center;}
+    .rank-hero .label{font-size:13px;color:var(--muted);}
+    .rank-hero .desc{font-size:13.5px;font-weight:700;}
+    .form-group{margin-bottom:16px;}
+    .form-group label{display:block;font-size:13px;font-weight:700;margin-bottom:6px;color:var(--text);}
+    .form-group input,.form-group select,.form-group textarea{width:100%;padding:10px 12px;border:1.5px solid var(--border);border-radius:10px;font-family:'Cairo',sans-serif;font-size:14px;outline:none;background:var(--surface);color:var(--text);}
+    .form-group input::placeholder,.form-group textarea::placeholder{color:var(--muted);}
+    .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--primary);}
+    .form-group select option{background:var(--surface);color:var(--text);}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+    @media(max-width:600px){.form-row{grid-template-columns:1fr;}}
+    .list-card{border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:12px;background:var(--surface);box-shadow:var(--shadow);transition:transform .15s ease, box-shadow .15s ease, border-color .15s ease;}
+    .list-card-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;}
+    .list-card-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 16px;margin-top:12px;font-size:13px;}
+    .list-card-grid span.k{color:var(--muted);display:block;font-size:11px;}
+    .filters-bar{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px;}
+    .filters-bar select,.filters-bar input{padding:8px 10px;border:1.5px solid var(--border);border-radius:10px;font-family:'Cairo',sans-serif;font-size:13px;background:var(--surface);color:var(--text);}
+    table.data-table{width:100%;border-collapse:separate;border-spacing:0;font-size:13px;}
+    table.data-table th{text-align:right;color:var(--muted);font-size:11.5px;padding:10px;border-bottom:1.5px solid var(--border);position:sticky;top:0;background:var(--surface);}
+    table.data-table td{padding:10px;border-bottom:1px solid var(--border);color:var(--text);}
+    .table-scroll{max-height:560px;overflow:auto;border:1px solid var(--border);border-radius:14px;background:var(--surface);}
+    .admin-layout{display:grid;grid-template-columns:220px 1fr;gap:20px;}
+    @media(max-width:800px){.admin-layout{grid-template-columns:1fr;gap:14px;}}
+    .admin-side{border:1px solid var(--border);border-radius:14px;padding:10px;height:fit-content;background:var(--surface);box-shadow:var(--shadow);}
+    .admin-side a{display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:10px;color:var(--muted);text-decoration:none;font-size:13px;font-weight:700;margin-bottom:2px;border:1px solid transparent;}
+    .admin-side a.active{border-color:var(--primary);color:var(--primary-dark);background:var(--primary-dim);}
+    @media(max-width:800px){
+      .admin-side{display:flex;overflow-x:auto;gap:6px;padding:8px;-webkit-overflow-scrolling:touch;}
+      .admin-side a{flex:0 0 auto;white-space:nowrap;margin-bottom:0;}
+    }
+    .kpi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-bottom:20px;}
+    .kpi{border:1px solid var(--border);border-radius:14px;padding:16px;background:var(--surface);box-shadow:var(--shadow);}
+    .kpi b{font-size:23px;display:block;color:var(--primary-dark);}
+    .kpi span{color:var(--muted);font-size:12px;}
+    .bottom-nav{display:none;position:fixed;bottom:0;left:0;right:0;background:var(--surface);border-top:1px solid var(--border);padding:4px 0 6px;z-index:50;box-shadow:0 -2px 12px rgba(15,30,28,.06);}
+    .bottom-nav-inner{display:flex;justify-content:space-around;}
+    .bottom-nav a{flex:1;text-align:center;color:var(--muted);text-decoration:none;font-size:12px;padding:6px 2px;display:flex;flex-direction:column;align-items:center;gap:0;border:none;background:transparent;transition:.15s;}
+    .bottom-nav a svg{width:24px;height:24px;outline:none!important;}
+    .bottom-nav a.active{color:var(--primary-dark);}
+    .bottom-nav a .nav-label{display:none;}
+    @media(max-width:760px){
+      .bottom-nav{display:block;}
+      main{padding-bottom:80px;}
+      .nav-links{display:none;}
+      .nav-actions{display:none;}
+      .topbar-inner{display:grid;grid-template-columns:auto 1fr auto;align-items:center;}
+      .topbar-inner .mobile-menu-btn{grid-column:1;justify-self:start;}
+      .topbar-inner .logo{grid-column:2;justify-self:center;}
+      .topbar-inner .mobile-notif-btn{grid-column:3;justify-self:end;}
+    }
+    .mobile-notif-btn{display:none;}
+    .mobile-notif-btn svg{margin:0;}
+    .mobile-menu-btn{display:none;background:transparent;border:1.5px solid var(--border);border-radius:10px;padding:6px 10px;cursor:pointer;font-size:20px;line-height:1;color:var(--primary-dark);transition:.15s;}
+    .mobile-menu{display:none;position:fixed;top:68px;left:16px;right:16px;background:var(--surface);border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow);z-index:60;padding:8px;max-height:calc(100vh - 90px);overflow-y:auto;}
+    .mobile-menu a{display:flex;align-items:center;gap:8px;padding:10px 12px;border-radius:10px;color:var(--muted);text-decoration:none;font-size:13.5px;font-weight:700;margin-bottom:2px;border:1px solid transparent;}
+    .mobile-menu a.active{border-color:var(--primary);color:var(--primary-dark);background:var(--primary-dim);}
+    @media(max-width:760px){.mobile-menu-btn{display:inline-flex;}.mobile-notif-btn{display:inline-flex;}}
+    @media(max-width:600px){
+      main{padding:16px 12px 90px;}
+      .page-title{font-size:18px;}
+      .hero{padding:30px 12px 22px;}
+      .card{padding:16px;}
+      .filters-bar{flex-direction:column;}
+      .filters-bar input,.filters-bar select{width:100%;}
+      dl.result-dl{grid-template-columns:1fr;gap:12px;}
+      .list-card-grid{grid-template-columns:1fr;}
+      .stats-row{grid-template-columns:repeat(2,1fr);}
+      .kpi-grid{grid-template-columns:repeat(2,1fr);}
+      table.data-table:not(.responsive-stack) th,table.data-table:not(.responsive-stack) td{white-space:nowrap;}
+      table.data-table.responsive-stack thead{display:none;}
+      table.data-table.responsive-stack,table.data-table.responsive-stack tbody,table.data-table.responsive-stack tr,table.data-table.responsive-stack td{display:block;width:100%;}
+      table.data-table.responsive-stack{border-collapse:separate;border-spacing:0;}
+      table.data-table.responsive-stack tr{margin-bottom:12px;border:1px solid var(--border);border-radius:12px;padding:10px 12px;background:var(--surface);box-shadow:var(--shadow);}
+      table.data-table.responsive-stack tr:last-child{margin-bottom:0;}
+      table.data-table.responsive-stack td{border:none;padding:6px 0;display:flex;justify-content:space-between;align-items:center;gap:10px;text-align:left;font-size:13px;}
+      table.data-table.responsive-stack td:not(:last-child){border-bottom:1px dashed var(--border);}
+      table.data-table.responsive-stack td::before{content:attr(data-label);font-weight:700;color:var(--muted);font-size:11.5px;flex-shrink:0;}
+      table.data-table.responsive-stack td[data-label=""]::before,table.data-table.responsive-stack td:not([data-label])::before{content:none;}
+      .rank-hero{flex-wrap:wrap;text-align:center;justify-content:center;}
+      table.data-table{font-size:12px;}
+      table.data-table th,table.data-table td{padding:8px 6px;}
+    }
+    @media(max-width:380px){
+      .stats-row{grid-template-columns:1fr 1fr;}
+      .hero h1{font-size:22px;}
+    }
+    .toast-wrap{position:fixed;top:16px;left:50%;transform:translateX(-50%);z-index:200;display:flex;flex-direction:column;gap:8px;}
+    .toast{background:var(--text);color:#fff;border:1px solid rgba(255,255,255,.15);padding:10px 18px;border-radius:10px;font-size:13px;animation:fadeIn .2s;display:flex;align-items:center;gap:8px;}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(-8px);}to{opacity:1;transform:translateY(0);}}
+    .search-suggest{max-width:600px;margin:14px auto 0;border:1px solid var(--border);border-radius:14px;overflow:hidden;text-align:right;background:var(--surface);box-shadow:var(--shadow);}
+    .search-suggest .item{padding:12px 16px;border-bottom:1px solid var(--border);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px;}
+    .search-suggest .item:last-child{border-bottom:none;}
+    .muted{color:var(--muted);}
+    footer.site-footer{border-top:1px solid var(--border);padding:20px 16px;text-align:center;color:var(--muted);font-size:12px;background:var(--surface);}
+    a{color:inherit;}
+    .telegram-link{display:inline-flex;align-items:center;gap:6px;color:var(--accent-blue);border:1px solid rgba(37,99,235,.3);border-radius:8px;padding:4px 12px 4px 10px;font-size:12.5px;text-decoration:none;transition:.15s;background:rgba(37,99,235,.06);}
+    .telegram-link svg{width:16px;height:16px;}
+    .chart-container{max-width:320px;margin:0 auto 24px;text-align:center;position:relative;}
+    .chart-container canvas{max-width:100%;height:auto;border-radius:50%;cursor:pointer;}
+    .chart-tooltip{position:absolute;background:var(--text);color:#fff;padding:8px 12px;border-radius:8px;font-size:12px;line-height:1.7;pointer-events:none;z-index:10;white-space:nowrap;box-shadow:var(--shadow);text-align:right;}
+    .hosp-row{cursor:pointer;transition:.15s;}
+    .hosp-names-inline{padding:14px 16px;display:grid;gap:6px;background:var(--bg-soft,#F8FAFB);border-top:1px solid var(--border);}
+    .hosp-name-row{display:flex;justify-content:space-between;align-items:center;font-size:13px;padding:4px 0;border-bottom:1px solid var(--border);}
+    .hosp-name-row:last-child{border-bottom:none;}
+  </style>
+</head>
+<body>
+<div id="app">
+  <header class="topbar">
+    <div class="topbar-inner">
+      <button class="btn btn-ghost btn-sm mobile-menu-btn" onclick="toggleMobileMenu()" aria-label="القائمة">☰</button>
+      <div class="logo" onclick="navigate('home')"><span>تكليفي</span></div>
+      <div class="nav-links" id="navLinks"></div>
+      <div class="nav-actions" id="navActions"></div>
+      <button class="btn btn-ghost btn-sm mobile-notif-btn" id="mobileNotifBtn" onclick="navigate('notifications')" aria-label="الإشعارات"></button>
+    </div>
+  </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <div id="mobileMenuLinks"></div>
+  </div>
+  <main id="main"></main>
+  <footer class="site-footer">Developed by Ahmed Khaled (Darwish)</footer>
+  <nav class="bottom-nav"><div class="bottom-nav-inner" id="bottomNav"></div></nav>
+</div>
+<div class="toast-wrap" id="toastWrap"></div>
+
+<!-- تحميل مكتبة Supabase من المصدر الصحيح -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script>
+  // ============================================================
+  // 1. CONFIG & INIT
+  // ============================================================
+  const SUPABASE_URL = 'https://ezzgusfxlxnlrdhwctmv.supabase.co';
+  const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV6emd1c2Z4bHhubHJkaHdjdG12Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODcwNDA4NjAsImV4cCI6MjEwMjYxNjg2MH0.PEB9bqQJGpICBUaxwQARIuAFk6Sx4Ur0pnWx09Rt7Uo';
+
+  // إنشاء عميل Supabase باستخدام المتغير العام 'supabase'
+  const sbClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+  // رابط قناة التليجرام — غيّره هنا لو حبيت تغيّر القناة
+  const TELEGRAM_CHANNEL_URL = 'https://t.me/YOUR_CHANNEL_HERE';
+
+
+  // ============================================================
+  // 2. ICONS (نفسها)
+  // ============================================================
+  const ICONS = {
+    hospital:`<svg class="icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 21V6a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v15"/><path d="M9 21v-4h6v4"/><path d="M12 7v4M10 9h4"/><path d="M3 21h18"/></svg>`,
+    home:`<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v10h14V10"/><path d="M9 20v-6h6v6"/></svg>`,
+    list:`<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="4" height="4" rx="0.5"/><rect x="4" y="10" width="4" height="4" rx="0.5"/><rect x="4" y="16" width="4" height="4" rx="0.5"/><path d="M11 6h9M11 12h9M11 18h9"/></svg>`,
+    bell:`<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>`,
+    user:`<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.3"/><path d="M5 20c1.2-3.6 4-5.4 7-5.4s5.8 1.8 7 5.4"/></svg>`,
+    users:`<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M2.5 20c1-3.2 3.4-4.8 6.5-4.8s5.5 1.6 6.5 4.8"/><circle cx="17" cy="8.5" r="2.3"/><path d="M15.5 15.4c2.6.3 4.3 1.9 5 4.6"/></svg>`,
+    search:`<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>`,
+    check:`<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>`,
+    x:`<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>`,
+    swap:`<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></svg>`,
+    mapPin:`<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>`,
+    back:`<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>`,
+    clipboard:`<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1"/><path d="M9 11h6M9 15h6"/></svg>`,
+    chart:`<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M12 20V4M20 20v-7"/><path d="M2 20h20"/></svg>`,
+    download:`<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4"/><path d="M4 19h16"/></svg>`,
+    logout:`<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></svg>`,
+    info:`<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.01"/></svg>`,
+    clock:`<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>`,
+    idcard:`<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2.2"/><circle cx="8.5" cy="12" r="2"/><path d="M6 16.2c.5-1.3 1.4-2 2.5-2s2 .7 2.5 2M14 9.5h5M14 13h5M14 16.5h3.5"/></svg>`,
+    lock:`<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="10.5" width="15" height="9.5" rx="2"/><path d="M7.5 10.5V7a4.5 4.5 0 0 1 9 0v3.5"/></svg>`,
+    telegram:`<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>`,
+    graduation:`<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>`,
+    star:`<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.7 5.8 6.3.6-4.7 4.3 1.3 6.3L12 17l-5.6 3 1.3-6.3-4.7-4.3 6.3-.6L12 3Z"/></svg>`
+  };
+
+  // ============================================================
+  // 3. META & CONSTANTS
+  // ============================================================
+  const accountStatusMeta = {
+    pending:{ label:"قيد المراجعة", cls:"badge-warning", icon:"clock" },
+    approved:{ label:"معتمد", cls:"badge-green", icon:"check" },
+    rejected:{ label:"مرفوض", cls:"badge-red", icon:"x" },
+    suspended:{ label:"معطّل", cls:"badge-red", icon:"x" },
+  };
+  const statusMeta = {
+    pending:{ label:"قيد البحث", cls:"badge-gray" },
+    matched:{ label:"تم العثور على مرشح", cls:"badge-blue" },
+    sent:{ label:"تم إرسال طلب تبديل", cls:"badge-warning" },
+    approved_by_both:{ label:"موافقة", cls:"badge-teal" },
+    approved_by_admin:{ label:"معتمد من الجهة", cls:"badge-green" },
+    rejected:{ label:"مرفوض", cls:"badge-red" },
+    cancelled:{ label:"ملغي", cls:"badge-gray" }
+  };
+
+  // ============================================================
+  // 4. UTILITY FUNCTIONS
+  // ============================================================
+  function normalizeArabic(str){
+    return (str||"").toString()
+      .replace(/[أإآ]/g,"ا").replace(/ة/g,"ه").replace(/ى/g,"ي")
+      .replace(/[ًٌٍَُِّْ]/g,"").trim();
+  }
+  // يسمح فقط بالحروف/الأرقام/الشرطة السفلية المسموحة فعليًا في يوزرات تليجرام
+  // (حماية من كسر رابط https://t.me/... بحقن رموز غريبة في اسم المستخدم)
+  function sanitizeTelegram(s){
+    return (s||"").toString().trim().replace(/^@/,'').replace(/[^a-zA-Z0-9_]/g,'').slice(0,64);
+  }
+  // يجلب كل الصفوف متجاوزًا حد الـ1000 صف الافتراضي لـ Supabase
+  async function fetchAllRows(table, selectStr, buildQuery){
+    const pageSize = 1000;
+    let from = 0, all = [];
+    while(true){
+      let q = sbClient.from(table).select(selectStr);
+      if(buildQuery) q = buildQuery(q);
+      const { data, error } = await q.range(from, from + pageSize - 1);
+      if(error) return { data: null, error };
+      all = all.concat(data || []);
+      if(!data || data.length < pageSize) break;
+      from += pageSize;
+    }
+    return { data: all, error: null };
+  }
+  function esc(s){ const d=document.createElement('div'); d.textContent = s??""; return d.innerHTML; }
+  // آمن للإدراج داخل onclick="fn('...')" — بيهرب backslash/quote على مستوى الجافاسكريبت
+  // ثم بيهرب الرموز المهمة على مستوى الـ HTML، عشان محدش يقدر يكسر الخاصية أو يحقن كود
+  function escAttr(s){
+    const jsSafe = String(s ?? '')
+      .replace(/\\/g, '\\\\')
+      .replace(/'/g, "\\'")
+      .replace(/\n/g, '\\n')
+      .replace(/\r/g, '');
+    return jsSafe
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+  function ar(n){ return (n??0).toLocaleString('ar-EG'); }
+  function toast(msg, icon){
+    const wrap = document.getElementById('toastWrap');
+    const t = document.createElement('div'); t.className='toast';
+    t.innerHTML = (icon?ICONS[icon]||'':'') + `<span>${esc(msg)}</span>`;
+    wrap.appendChild(t);
+    setTimeout(()=>{ t.style.opacity='0'; t.style.transition='.3s'; setTimeout(()=>t.remove(),300); },2400);
+  }
+  function rankMeta(r){
+    if(r===null || r===undefined) return { cls:'badge-gray', label:'غير محدد' };
+    if(r<=3) return { cls:'badge-green', label:'ممتازة' };
+    if(r<=10) return { cls:'badge-blue', label:'جيدة جدًا' };
+    if(r<=30) return { cls:'badge-orange', label:'متوسطة' };
+    return { cls:'badge-gray', label:'متأخرة' };
+  }
+  function debounce(fn, ms){ let t; return (...a)=>{ clearTimeout(t); t=setTimeout(()=>fn(...a),ms); }; }
+
+  // ============================================================
+  // 5. ROUTER
+  // ============================================================
+  let route = { name:'home', params:{} };
+  let currentUser = null;
+  let currentProfile = null;
+
+  function navigate(name, params={}){
+    // مشاهدة الطلبات والإشعارات تحتاج فقط تسجيل دخول، مش اعتماد الإدارة
+    const loginGated = (name==='requestSwap' || name==='myRequests' || name==='notifications' || name==='candidates');
+    // إرسال طلبات جديدة (تبديل/بحث عن تبديلة) يحتاج اعتماد الإدارة فعليًا
+    const approvalGated = (name==='requestSwap' || name==='candidates');
+    if(loginGated && !currentUser){ toast('يرجى تسجيل الدخول أولاً','info'); name='auth'; }
+    else if(approvalGated && currentUser && currentProfile && currentProfile.status!=='approved'){ toast('حسابك قيد المراجعة، سيتم تفعيله بعد اعتماد الإدارة','clock'); name='auth'; }
+    if(name==='admin' && (!currentUser || currentProfile?.role!=='admin')){
+      toast('غير مصرح لك بدخول لوحة المشرف','info');
+      name='home';
+    }
+    route = { name, params };
+    location.hash = '#' + name + (params.id ? '/' + params.id : '');
+    closeMobileMenu();
+    render();
+  }
+
+  window.addEventListener('hashchange', ()=>{
+    const h = location.hash.replace('#','');
+    const [name,id] = h.split('/');
+    route = { name: name || 'home', params: id ? {id} : {} };
+    closeMobileMenu();
+    render();
+  });
+
+  // ============================================================
+  // 6. AUTH STATE
+  // ============================================================
+  sbClient.auth.onAuthStateChange(async (event, session) => {
+    if (session?.user) {
+      currentUser = session.user;
+      const { data, error } = await sbClient
+        .from('profiles')
+        .select('*')
+        .eq('id', currentUser.id)
+        .single();
+      if (data) {
+        currentProfile = data;
+      } else {
+        currentProfile = null;
+      }
+    } else {
+      currentUser = null;
+      currentProfile = null;
+    }
+    render();
+  });
+
+  // ============================================================
+  // 7. HEADER / NAV
+  // ============================================================
+  async function renderHeader(){
+    let unreadCount = 0;
+    if(currentUser){
+      const { count } = await sbClient
+        .from('notifications')
+        .select('*', { count: 'exact', head: true })
+        .eq('user_id', currentUser.id)
+        .eq('read', false);
+      unreadCount = count || 0;
+    }
+    const badgeHtml = unreadCount>0 ? `<span class="notif-badge">${unreadCount>9?'9+':unreadCount}</span>` : '';
+
+    const links = [
+      ['home','الرئيسية','home'],
+      ['universities','الجامعات','graduation'],
+      ['hospitals','الجهات الطبية','hospital'],
+      ['candidates','البحث عن تبديلة','users'],
+      ['myRequests','طلباتي','list'],
+      ['notifications','الإشعارات','bell']
+    ];
+    if(currentProfile?.role==='admin'){
+      links.push(['admin','لوحة المشرف','chart']);
+    }
+    document.getElementById('navLinks').innerHTML = links.map(([k,label,ic])=>
+      `<a href="#${k}" class="${route.name===k?'active':''}">${k==='notifications' ? `<span class="icon-wrap">${ICONS[ic]}${badgeHtml}</span>` : ICONS[ic]}${label}</a>`
+    ).join('');
+    document.getElementById('mobileMenuLinks').innerHTML = links.filter(([k])=>k!=='notifications').map(([k,label,ic])=>
+      `<a href="#${k}" class="${route.name===k?'active':''}" onclick="closeMobileMenu()">${ICONS[ic]}${label}</a>`
+    ).join('');
+
+    const navActions = document.getElementById('navActions');
+    if(currentUser){
+      navActions.innerHTML = `
+        <span class="muted" style="font-size:13px;margin-left:6px;display:flex;align-items:center;gap:6px;">${ICONS.user}${esc(currentProfile?.name || currentUser.email)}</span>
+        <button class="btn btn-ghost btn-sm" onclick="logout()">${ICONS.logout}تسجيل الخروج</button>`;
+    } else {
+      navActions.innerHTML = `
+        <button class="btn btn-ghost btn-sm" onclick="navigate('auth')">تسجيل الدخول</button>
+        <button class="btn btn-primary btn-sm" onclick="navigate('auth')">حساب جديد</button>`;
+    }
+
+    const notifBtn = document.getElementById('mobileNotifBtn');
+    if(notifBtn) notifBtn.innerHTML = `${ICONS.bell}${badgeHtml}`;
+
+    const bnLinks = [
+      ['home','home','الرئيسية'],
+      ['myRequests','list','طلباتي'],
+      ['auth','user','حسابي'],
+    ];
+    if(currentProfile?.role==='admin'){
+      bnLinks.push(['admin','chart','الإدارة']);
+    }
+    document.getElementById('bottomNav').innerHTML = bnLinks.map(([k,ic,label])=>
+      `<a href="#${k}" class="${route.name===k?'active':''}" title="${label}">${ICONS[ic]}<span class="nav-label">${label}</span></a>`
+    ).join('');
+  }
+
+  function toggleMobileMenu(){
+    const m = document.getElementById('mobileMenu');
+    m.style.display = (m.style.display === 'block') ? 'none' : 'block';
+  }
+  function closeMobileMenu(){
+    const m = document.getElementById('mobileMenu');
+    if(m) m.style.display = 'none';
+  }
+  async function logout(){ 
+    await sbClient.auth.signOut();
+    currentUser = null; currentProfile = null; 
+    toast('تم تسجيل الخروج'); navigate('home'); 
+  }
+
+  // ============================================================
+  // 8. PAGES
+  // ============================================================
+
+  // ---------- HOME ----------
+  async function pageHome(){
+    // إحصائيات — استعلام واحد مجمّع من قاعدة البيانات بدل تحميل كل الصفوف
+    const { data: stats, error } = await sbClient.rpc('get_home_stats');
+    if (error) return `<div class="empty-state">خطأ في تحميل البيانات</div>`;
+
+    const total = stats.total || 0;
+    const univCount = stats.universities || 0;
+    const hospCount = stats.hospitals || 0;
+    const firstChoice = stats.first_choice || 0;
+    const pctFirst = total ? ((firstChoice/total)*100).toFixed(1) : 0;
+    const rankDist = stats.rank_dist || {};
+
+    // توزيع الرغبات
+    const topBuckets = [1,2,3,4,5];
+    const distData = topBuckets.map(d => ({ d, c: rankDist[String(d)] || 0 }));
+    const maxC = Math.max(...distData.map(x=>x.c), 1);
+
+    return `
+    <div class="hero">
+      <span class="kicker">${ICONS.graduation}بيانات حقيقية — ${ar(total)} طالب</span>
+      <h1>نتيجة <span class="hl">تكليفي</span> خريجي كليات التمريض</h1>
+      <p>ابحث عن نتيجتك برقم الخريج أو الاسم الثلاثي، واطّلع على ترتيب رغبتك المتحققة، وتواصل مع زملائك لتبديل جهة التكليف بسهولة.</p>
+      <div class="search-box">
+        <input id="searchInput" type="text" placeholder="اكتب الاسم الثلاثي أو رقم الخريج" onkeyup="onSearchKey(event)">
+        <button class="btn btn-primary" onclick="doSearch()">${ICONS.search}بحث</button>
+      </div>
+      <div id="searchSuggest"></div>
+      <ul class="hint-list">
+        <li>${ICONS.info}<span>أدخل اسمك الثلاثي كاملًا أو رقم الخريج للحصول على أدق نتيجة.</span></li>
+        <li>${ICONS.info}<span>إذا تكرر الاسم اختر رقم الخريج الصحيح من قائمة النتائج.</span></li>
+        <li>${ICONS.info}<span>بيانات التواصل لا تظهر لأي طرف قبل موافقة الطرفين على التبديل.</span></li>
+      </ul>
+      <div class="stats-row">
+        <div class="stat"><b>${ar(total)}</b><span>خريج مسجل</span></div>
+        <div class="stat"><b>${ar(hospCount)}</b><span>جهة/مستشفى</span></div>
+        <div class="stat"><b>${ar(univCount)}</b><span>جامعة</span></div>
+        <div class="stat"><b>${pctFirst}%</b><span>حصلوا على رغبتهم الأولى</span></div>
+      </div>
+      <div class="dist-wrap">
+        <div class="page-sub" style="text-align:center;margin-bottom:14px;">توزيع الطلاب حسب ترتيب الرغبة الأولى إلى الخامسة</div>
+        ${distData.map(d => {
+          const pct = maxC ? (d.c/maxC*100) : 0;
+          return `<div class="dist-row">
+            <span class="dist-label">رغبة ${d.d.toLocaleString('ar-EG')}</span>
+            <span class="dist-bar-bg"><span class="dist-bar" style="width:${pct}%"></span></span>
+            <span class="dist-count">${ar(d.c)}</span>
+          </div>`;
+        }).join('')}
+      </div>
+    </div>`;
+  }
+
+  // ---------- SEARCH ----------
+  function onSearchKey(e){
+    if(e.key==='Enter') doSearch();
+    else renderSuggest(e.target.value);
+  }
+
+  const renderSuggest = debounce(async function(q){
+    const box = document.getElementById('searchSuggest');
+    if(!box) return;
+    if(!q || q.trim().length<2){ box.innerHTML=''; return; }
+    const nq = normalizeArabic(q);
+    const { data, error } = await sbClient
+      .from('students')
+      .select('*')
+      .or(`name.ilike.%${nq}%,grad_number.ilike.%${q}%`)
+      .limit(6);
+    if(!data || data.length===0){ box.innerHTML=''; return; }
+    box.innerHTML = `<div class="search-suggest">${data.map(r=>`
+      <div class="item" onclick="navigate('result',{id:'${escAttr(r.grad_number)}'})">
+        <span>${esc(r.name)} <span class="muted">— ${esc(r.university)}</span></span>
+        <span class="muted">#${r.grad_number}</span>
+      </div>`).join('')}</div>`;
+  }, 150);
+
+  async function doSearch(){
+    const q = document.getElementById('searchInput').value.trim();
+    if(!q){ toast('يرجى إدخال الاسم أو رقم الخريج','info'); return; }
+    const nq = normalizeArabic(q);
+    const { data, error } = await sbClient
+      .from('students')
+      .select('*')
+      .or(`name.ilike.%${nq}%,grad_number.ilike.%${q}%`);
+    if(error){ toast('خطأ في البحث','info'); return; }
+    if(data.length===0){ toast('لم يتم العثور على نتيجة','info'); return; }
+    if(data.length===1){ navigate('result',{id:data[0].grad_number}); return; }
+    navigate('searchResults',{q});
+  }
+
+  async function pageSearchResults(q){
+    const nq = normalizeArabic(q||"");
+    const { data, error } = await sbClient
+      .from('students')
+      .select('*')
+      .or(`name.ilike.%${nq}%,grad_number.ilike.%${q||""}%`)
+      .limit(200);
+    if(error) return `<div class="empty-state">خطأ في البحث</div>`;
+    return `
+    <div class="page-title">${ICONS.search}نتائج البحث عن "${esc(q||"")}"</div>
+    <div class="page-sub">تم العثور على ${ar(data.length)} نتيجة مطابقة — اختر رقم الخريج الصحيح</div>
+    ${data.map(r=>{
+      const meta = rankMeta(r.rank);
+      return `<div class="list-card" style="cursor:pointer" onclick="navigate('result',{id:'${escAttr(r.grad_number)}'})">
+        <div class="list-card-top">
+          <div>
+            <b>${esc(r.name)}</b>
+            <div class="muted" style="font-size:12.5px;">${esc(r.university)} — رقم الخريج: ${r.grad_number}</div>
+          </div>
+          <span class="badge ${meta.cls}">رغبة ${r.rank??'-'}</span>
+        </div>
+      </div>`;
+    }).join('') || `<div class="empty-state">لا توجد نتائج</div>`}
+    <button class="btn btn-ghost" onclick="navigate('home')">${ICONS.back}الرجوع للبحث</button>
+    `;
+  }
+
+  // ---------- RESULT ----------
+  async function pageResult(id){
+    const { data: r, error } = await sbClient
+      .from('students')
+      .select('*')
+      .eq('grad_number', id)
+      .single();
+    if(error || !r) return `<div class="empty-state">لم يتم العثور على الطالب</div>`;
+    const meta = rankMeta(r.rank);
+    const isOwn = currentProfile && currentProfile.grad_number === r.grad_number;
+
+    // عدد طلبات التبديل الموجهة لهذا الطالب (لسه معلّقة/مُرسلة)
+    const { count: pendingCount } = await sbClient
+      .from('swap_requests')
+      .select('*', { count: 'exact', head: true })
+      .eq('target_student_id', r.id)
+      .in('status', ['pending','sent']);
+
+    let actionBtn = '';
+    if(isOwn){
+      actionBtn = `<button class="btn btn-primary" onclick="navigate('requestSwap',{id:'${escAttr(r.grad_number)}'})">${ICONS.swap}أرغب في إيجاد بديل</button>`;
+    } else if(currentUser && currentProfile?.status==='approved'){
+      actionBtn = `<button class="btn btn-primary" onclick="sendSwapRequest('${escAttr(r.grad_number)}')">${ICONS.swap}أرغب في التبديل معك</button>`;
+    } else if(!currentUser){
+      actionBtn = `<button class="btn btn-primary" onclick="navigate('auth')">${ICONS.swap}سجّل دخولك لطلب التبديل</button>`;
+    }
+
+    return `
+    <div class="result-grid">
+      <section>
+        <div class="card">
+          <div class="list-card-top">
+            <h3 style="margin:0;">${esc(r.name)}</h3>
+            <div style="display:flex;gap:6px;flex-wrap:wrap;">
+              <span class="badge badge-teal">${ICONS.graduation}تمريض</span>
+              ${pendingCount ? `<span class="badge badge-secondary">${ICONS.swap}${ar(pendingCount)} طلب تبديل معلّق</span>` : ''}
+            </div>
+          </div>
+          <dl class="result-dl">
+            <div class="full pair-row">
+              <div><dt>رقم الخريج</dt><dd>${r.grad_number}</dd></div>
+              <div><dt>الجامعة</dt><dd>${esc(r.university)}</dd></div>
+            </div>
+            <div class="full"><dt>جهة التكليف</dt><dd>${esc(r.hospital)}</dd></div>
+          </dl>
+          <div class="rank-hero">
+            <div class="num">${r.rank ?? '—'}</div>
+            <div>
+              <div class="desc">ترتيب الرغبة التي تحققت</div>
+              <div class="label"><span class="badge ${meta.cls}">${meta.label}</span></div>
+            </div>
+          </div>
+          <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap;">
+            ${actionBtn}
+            <button class="btn btn-ghost" onclick="navigate('home')">${ICONS.back}الرجوع للبحث</button>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <h3 style="margin-top:0;display:flex;align-items:center;gap:8px;">${ICONS.hospital}عن جهة التكليف</h3>
+        ${await hospitalInfoBlock(r.hospital)}
+      </section>
+    </div>`;
+  }
+
+  async function hospitalInfoBlock(hName){
+    const { count, error } = await sbClient
+      .from('students')
+      .select('*', { count: 'exact', head: true })
+      .eq('hospital', hName);
+    if(error) return `<div class="empty-state">لا تتوفر بيانات إضافية</div>`;
+    return `
+    <dl class="result-dl">
+      <div class="full"><dt>اسم الجهة</dt><dd>${esc(hName)}</dd></div>
+      <div><dt>إجمالي الملحقين بها</dt><dd>${ar(count)}</dd></div>
+    </dl>
+    <p class="map-note" style="font-size:12.5px;color:var(--muted);margin-top:14px;display:flex;gap:6px;">${ICONS.info}<span>عدد الملحقين بهذه الجهة</span></p>`;
+  }
+
+  // ---------- AUTH ----------
+  let authTab = 'login';
+  function switchAuthTab(tab){ authTab=tab; render(); }
+
+  async function pageAuth(){
+    if(currentUser){
+      const meta = accountStatusMeta[currentProfile?.status] || accountStatusMeta.pending;
+
+      // نتيجة المستخدم — تظهر في بروفايله لو موجودة
+      let resultBlock = '';
+      if(currentProfile?.grad_number){
+        const { data: myResult } = await sbClient
+          .from('students')
+          .select('*')
+          .eq('grad_number', currentProfile.grad_number)
+          .maybeSingle();
+        if(myResult){
+          const rmeta = rankMeta(myResult.rank);
+          resultBlock = `
+          <div class="card" style="max-width:640px;margin:16px auto 0;">
+            <h3 style="margin-top:0;display:flex;align-items:center;gap:8px;">${ICONS.graduation}نتيجتك</h3>
+            <dl class="result-dl">
+              <div><dt>الجامعة</dt><dd>${esc(myResult.university)}</dd></div>
+              <div><dt>ترتيب الرغبة</dt><dd><span class="badge ${rmeta.cls}">${myResult.rank ?? '—'} — ${rmeta.label}</span></dd></div>
+              <div class="full"><dt>جهة التكليف</dt><dd>${esc(myResult.hospital)}</dd></div>
+            </dl>
+            <div style="margin-top:12px;">
+              <button class="btn btn-ghost btn-sm" onclick="navigate('result',{id:'${escAttr(myResult.grad_number)}'})">${ICONS.info}عرض الصفحة الكاملة</button>
+            </div>
+          </div>`;
+        }
+      }
+
+      return `
+      <div class="card" style="max-width:640px;margin:0 auto;">
+        <div style="text-align:center;">
+          <div class="avatar-badge">${ICONS.user}</div>
+          <div class="page-title" style="justify-content:center;">${esc(currentProfile?.name || currentUser.email)}</div>
+          <div style="display:flex;justify-content:center;margin-bottom:8px;flex-wrap:wrap;gap:6px;">
+            <span class="badge ${meta.cls}">${ICONS[meta.icon]}${meta.label}</span>
+            ${currentProfile?.telegram ? `<span class="badge badge-blue">${ICONS.telegram}${esc(currentProfile.telegram)}</span>` : ''}
+            ${currentProfile?.role==='admin' ? `<span class="badge badge-purple">${ICONS.star}مشرف</span>` : ''}
+          </div>
+          <div class="muted" style="font-size:12.5px;display:flex;justify-content:center;gap:14px;flex-wrap:wrap;">
+            <span style="display:flex;align-items:center;gap:5px;">${ICONS.idcard}رقم الخريج: ${esc(currentProfile?.grad_number || '—')}</span>
+            <span style="display:flex;align-items:center;gap:5px;">${ICONS.user}${esc(currentProfile?.phone || '—')}</span>
+          </div>
+        </div>
+        ${currentProfile?.status==='pending' ? `
+        <div class="empty-state" style="margin-top:20px;">
+          ${ICONS.clock}
+          <div style="margin-top:8px;">حسابك قيد المراجعة حاليًا. سيتم تفعيل جميع الميزات بعد اعتماد الإدارة.</div>
+        </div>` : ''}
+        ${currentProfile?.status==='rejected' ? `
+        <div class="empty-state" style="margin-top:20px;border-color:var(--accent-red);">
+          ${ICONS.x}
+          <div style="margin-top:8px;">تم رفض طلب تفعيل حسابك. يرجى التواصل مع الإدارة.</div>
+        </div>` : ''}
+        ${currentProfile?.status==='suspended' ? `
+        <div class="empty-state" style="margin-top:20px;border-color:var(--accent-red);">
+          ${ICONS.x}
+          <div style="margin-top:8px;">تم تعطيل حسابك من قِبل الإدارة. يرجى التواصل معها لمزيد من التفاصيل.</div>
+        </div>` : ''}
+        <div class="form-group" style="margin-top:22px;">
+          <label>${ICONS.telegram} حساب التليجرام</label>
+          <div style="display:flex;gap:8px;">
+            <input id="editTelegram" placeholder="@username" value="${esc(currentProfile?.telegram || '')}" style="flex:1;">
+            <button class="btn btn-primary btn-sm" onclick="updateTelegram()">${ICONS.check}حفظ</button>
+          </div>
+        </div>
+        <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;">
+          <button class="btn btn-ghost" onclick="navigate('myRequests')">${ICONS.list}طلباتي</button>
+          ${currentProfile?.status==='approved' ? `<button class="btn btn-primary" onclick="navigate('requestSwap',{id:'${escAttr(currentProfile?.grad_number)}'})">${ICONS.swap}طلب تبديل</button>` : ''}
+          <button class="btn btn-danger" onclick="logout()">${ICONS.logout}تسجيل الخروج</button>
+        </div>
+      </div>
+      ${resultBlock}`;
+    }
+
+    return `
+    <div class="card" style="max-width:480px;margin:0 auto;">
+      <div style="display:flex;gap:8px;margin-bottom:20px;">
+        <button class="btn ${authTab==='login'?'btn-primary':'btn-ghost'} btn-block" onclick="switchAuthTab('login')">تسجيل الدخول</button>
+        <button class="btn ${authTab==='register'?'btn-primary':'btn-ghost'} btn-block" onclick="switchAuthTab('register')">حساب جديد</button>
+      </div>
+      ${authTab==='login' ? `
+        <div class="page-sub" style="text-align:center;">أدخل رقم الخريج وكلمة المرور</div>
+        <div class="form-group"><label>رقم الخريج</label><input id="loginGradNum" placeholder="623167002"></div>
+        <div class="form-group"><label>كلمة المرور</label><input id="loginPassword" type="password" placeholder="********"></div>
+        <button class="btn btn-primary btn-block" onclick="doLoginExisting()">${ICONS.lock}دخول</button>
+        <div class="muted" style="text-align:center;font-size:12.5px;margin-top:14px;">${ICONS.info} نسيت كلمة المرور؟ يرجى التواصل مع المطوّر لإعادة تعيينها.</div>
+      ` : `
+        <div class="page-sub" style="text-align:center;">يجب أن يتطابق الاسم ورقم الخريج مع قاعدة بيانات النتيجة.</div>
+        <div class="form-group"><label>الاسم الثلاثي</label><input id="regName" placeholder="اكتب اسمك كما ظهر في النتيجة"></div>
+        <div class="form-group"><label>رقم الخريج</label><input id="regGradNum" placeholder="623167002"></div>
+        <div class="form-group"><label>كلمة المرور</label><input id="regPassword" type="password" placeholder="********"></div>
+        <div class="form-group"><label>رقم الهاتف</label><input id="regPhone" placeholder="01xxxxxxxxx"></div>
+        <div class="form-group"><label>تليجرام</label><input id="regTelegram" placeholder="@username"></div>
+        <button class="btn btn-primary btn-block" onclick="doRegister()">${ICONS.idcard}إرسال طلب إنشاء الحساب</button>
+      `}
+    </div>`;
+  }
+
+  function gradEmail(gradNumber){
+    return `${gradNumber}@tansiq.local`;
+  }
+
+  async function doRegister(){
+    const name = document.getElementById('regName').value.trim();
+    const gradNumber = document.getElementById('regGradNum').value.trim();
+    const password = document.getElementById('regPassword').value.trim();
+    const phone = document.getElementById('regPhone').value.trim();
+    const telegram = sanitizeTelegram(document.getElementById('regTelegram').value);
+    if(!name || !gradNumber || !password || !phone){ toast('يرجى تعبئة جميع الحقول المطلوبة','info'); return; }
+    if(password.length < 6){ toast('كلمة المرور يجب ألا تقل عن 6 أحرف','info'); return; }
+
+    // التحقق من الطالب: رقم الخريج + مطابقة الاسم
+    const { data: student, error: sErr } = await sbClient
+      .from('students')
+      .select('grad_number,name')
+      .eq('grad_number', gradNumber)
+      .single();
+    if(sErr || !student){ toast('رقم الخريج غير موجود في قاعدة بيانات التنسيق','info'); return; }
+    if(normalizeArabic(student.name) !== normalizeArabic(name)){
+      toast('الاسم المدخل لا يطابق الاسم المسجل لهذا الرقم في النتيجة','info');
+      return;
+    }
+
+    // التأكد أن هذا الرقم لم يُسجَّل من قبل
+    const { data: existing } = await sbClient
+      .from('profiles')
+      .select('id')
+      .eq('grad_number', gradNumber)
+      .maybeSingle();
+    if(existing){ toast('يوجد حساب مسجل بالفعل بهذا الرقم','info'); return; }
+
+    // إنشاء المستخدم (إيميل داخلي مبني على رقم الخريج، غير ظاهر للمستخدم)
+    const { data: auth, error: signUpErr } = await sbClient.auth.signUp({
+      email: gradEmail(gradNumber), password
+    });
+    if(signUpErr){ toast('فشل إنشاء الحساب: '+signUpErr.message,'info'); return; }
+
+    // إنشاء البروفايل
+    const { error: profErr } = await sbClient
+      .from('profiles')
+      .insert({
+        id: auth.user.id,
+        name,
+        grad_number: gradNumber,
+        phone,
+        telegram,
+        status: 'pending',
+        role: 'user'
+      });
+    if(profErr){ toast('فشل إنشاء الملف الشخصي: '+profErr.message,'info'); return; }
+
+    // ربط صف بيانات الطالب بحساب المستخدم فورًا — عشان أي طلبات تبديل
+    // كانت مُرسلة له قبل ما يعمل حساب تظهرله فورًا في "طلباتي" والإشعارات
+    await sbClient
+      .from('students')
+      .update({ user_id: auth.user.id })
+      .eq('grad_number', gradNumber)
+      .is('user_id', null);
+
+    // طلب الحساب للإدارة
+    await sbClient
+      .from('account_requests')
+      .insert({ name, grad_number: gradNumber, phone, telegram });
+
+    toast('تم إرسال طلب إنشاء الحساب، بانتظار مراجعة الإدارة','clock');
+    switchAuthTab('login');
+  }
+
+  async function doLoginExisting(){
+    const gradNumber = document.getElementById('loginGradNum').value.trim();
+    const password = document.getElementById('loginPassword').value.trim();
+    if(!gradNumber || !password){ toast('يرجى إدخال رقم الخريج وكلمة المرور','info'); return; }
+    const { data, error } = await sbClient.auth.signInWithPassword({ email: gradEmail(gradNumber), password });
+    if(error){ toast('رقم الخريج أو كلمة المرور غير صحيحة','info'); return; }
+    toast('تم تسجيل الدخول بنجاح','check');
+    navigate('home');
+  }
+
+  async function updateTelegram(){
+    const val = sanitizeTelegram(document.getElementById('editTelegram')?.value);
+    const { error } = await sbClient.from('profiles').update({ telegram: val }).eq('id', currentProfile.id);
+    if(error){ toast('فشل تحديث حساب التليجرام: '+error.message,'info'); return; }
+    currentProfile.telegram = val;
+    toast('تم تحديث حساب التليجرام','check');
+    navigate('auth');
+  }
+
+  // ---------- REQUEST SWAP ----------
+  async function pageRequestSwap(gradNumber){
+    if(!currentProfile || currentProfile.grad_number !== gradNumber){
+      toast('يمكنك فقط طلب تبديل جهة التكليف الخاصة بك أنت','info');
+      navigate('auth');
+      return '';
+    }
+    const { data: r, error } = await sbClient
+      .from('students')
+      .select('*')
+      .eq('grad_number', gradNumber)
+      .single();
+    if(error) return `<div class="empty-state">لم يتم العثور على الطالب</div>`;
+    
+    const { data: hospitals, error: hErr } = await sbClient
+      .from('students')
+      .select('hospital')
+      .neq('hospital', r.hospital);
+    const uniqueHospitals = [...new Set(hospitals?.map(h=>h.hospital) || [])];
+
+    return `
+    <div class="card" style="max-width:600px;margin:0 auto;">
+      <div class="page-title">${ICONS.swap}طلب تبديل جهة التكليف</div>
+      <div class="page-sub">بيانات التكليف الحالي (للقراءة فقط)</div>
+      <dl class="result-dl" style="margin-bottom:20px;">
+        <div><dt>الاسم</dt><dd>${esc(r.name)}</dd></div>
+        <div><dt>ترتيب الرغبة الحالية</dt><dd>${r.rank ?? '—'}</dd></div>
+        <div class="full"><dt>جهة التكليف الحالية</dt><dd>${esc(r.hospital)}</dd></div>
+      </dl>
+      <div class="form-group">
+        <label>الجهة المطلوبة للانتقال إليها</label>
+        <select id="targetHospital">
+          ${uniqueHospitals.map(h=>`<option value="${esc(h)}">${esc(h)}</option>`).join('')}
+        </select>
+      </div>
+      <div class="form-group">
+        <label>تليجرام (للتواصل)</label>
+        <input id="swapTelegram" placeholder="@username" value="${esc(currentProfile?.telegram || '')}">
+      </div>
+      <div class="form-group">
+        <label>ملاحظات</label>
+        <textarea id="notes" rows="3" placeholder="اكتب أي ملاحظات..."></textarea>
+      </div>
+      <button class="btn btn-primary btn-block" onclick="submitSwap('${escAttr(gradNumber)}','${escAttr(r.hospital)}')">${ICONS.check}حفظ الطلب</button>
+    </div>`;
+  }
+
+  async function submitSwap(gradNumber, currentHospital){
+    const targetHospital = document.getElementById('targetHospital').value;
+    const notes = document.getElementById('notes').value;
+    const telegram = sanitizeTelegram(document.getElementById('swapTelegram').value) || currentProfile?.telegram || '';
+
+    // 1. الحصول على student_id
+    const { data: student, error: sErr } = await sbClient
+      .from('students')
+      .select('id')
+      .eq('grad_number', gradNumber)
+      .single();
+    if(sErr){ toast('خطأ في بيانات الطالب','info'); return; }
+
+    // 2. إنشاء طلب تبديل
+    const { data: swap, error: swErr } = await sbClient
+      .from('swap_requests')
+      .insert({
+        applicant_id: currentProfile.id,
+        current_hospital: currentHospital,
+        target_hospital: targetHospital,
+        telegram: telegram,
+        notes: notes,
+        status: 'pending'
+      })
+      .select()
+      .single();
+    if(swErr){ toast('فشل حفظ الطلب: '+swErr.message,'info'); return; }
+
+    toast('تم حفظ طلب التبديل بنجاح — سيراجعه فريق الإدارة للمساعدة في إيجاد بديل','check');
+    navigate('myRequests');
+  }
+
+  // ---------- SEARCH FOR SWAP (كان "المرشحون") ----------
+  let lastSearchResults = [];
+
+  function pageCandidates(params){
+    setTimeout(()=>{ applyOpenRequests(); applySwapSearch(); },0);
+    return `
+    <div class="page-title">${ICONS.users}البحث عن تبديلة</div>
+
+    <div class="page-sub" style="margin-top:0;">طلبات تبديل مفتوحة من زملائك — اضغط للتواصل المباشر مع صاحب الطلب</div>
+    <div id="openReqList"></div>
+
+    <div class="page-title" style="margin-top:26px;font-size:16px;">${ICONS.hospital}ابحث عن جهة وابعت طلب</div>
+    <div class="page-sub">اختر الجهة اللي عايز تروحلها، وهيظهرلك كل الطلبة الموجودين فيها — تقدر تبعت لواحد بعينه أو للكل دفعة واحدة.</div>
+    <div class="filters-bar">
+      <input id="fSwapSearch" placeholder="ابحث باسم الجهة اللي عايز تروحلها..." oninput="applySwapSearch()" style="min-width:280px;">
+    </div>
+    <div id="candList"></div>
+    `;
+  }
+
+  // -- الطلبات المفتوحة (اللي مش موجّهة لحد معين، اتعملت من "أرغب في إيجاد بديل") --
+  async function applyOpenRequests(){
+    const el = document.getElementById('openReqList');
+    if(!el) return;
+    el.innerHTML = `<div class="empty-state">${ICONS.clock}<div style="margin-top:8px;">جاري التحميل...</div></div>`;
+
+    const { data, error } = await sbClient
+      .from('swap_requests')
+      .select('id, current_hospital, target_hospital, notes, applicant_id, applicant:profiles!applicant_id(name, grad_number)')
+      .is('target_student_id', null)
+      .eq('status', 'pending')
+      .order('created_at', { ascending: false });
+
+    if(error){ el.innerHTML = `<div class="empty-state">تعذر تحميل الطلبات المفتوحة</div>`; return; }
+
+    const list = (data||[]).filter(r=> r.applicant_id !== currentProfile?.id);
+
+    el.innerHTML = list.length ? list.map(r=>`
+      <div class="list-card">
+        <div style="font-weight:700;font-size:14.5px;line-height:2;">
+          تبديل من <span style="color:var(--primary-dark)">${esc(r.current_hospital)}</span>
+          إلى <span style="color:var(--primary-dark)">${esc(r.target_hospital)}</span>
+        </div>
+        <div class="muted" style="font-size:12.5px;">بواسطة: ${esc(r.applicant?.name || 'مستخدم')}</div>
+        ${r.notes ? `<div class="muted" style="font-size:12.5px;margin-top:4px;">ملاحظات: ${esc(r.notes)}</div>` : ''}
+        <div style="margin-top:10px;">
+          <button class="btn btn-primary btn-sm" onclick="sendSwapRequest('${escAttr(r.applicant?.grad_number)}')">${ICONS.swap}تواصل معه</button>
+        </div>
+      </div>
+    `).join('') : `<div class="empty-state">لا توجد طلبات مفتوحة حاليًا</div>`;
+  }
+
+  async function applySwapSearch(){
+    const q = normalizeArabic(document.getElementById('fSwapSearch')?.value || '');
+    const el = document.getElementById('candList');
+    if(!el) return;
+
+    if(!q){
+      lastSearchResults = [];
+      el.innerHTML = `<div class="empty-state">${ICONS.info}<div style="margin-top:8px;">اكتب اسم الجهة اللي عايز تروحلها للبحث عن الموجودين فيها</div></div>`;
+      return;
+    }
+
+    el.innerHTML = `<div class="empty-state">${ICONS.clock}<div style="margin-top:8px;">جاري البحث...</div></div>`;
+
+    const { data, error } = await fetchAllRows('students', 'name, grad_number, university, hospital', qb => qb.ilike('hospital', `%${q}%`));
+    if(error){ toast('خطأ في البحث: '+error.message,'info'); return; }
+
+    const myGradNumber = currentProfile?.grad_number;
+    const filtered = (data||[]).filter(s=> s.grad_number !== myGradNumber);
+    lastSearchResults = filtered;
+
+    if(!filtered.length){
+      el.innerHTML = `<div class="empty-state">لا يوجد طلبة في هذه الجهة</div>`;
+      return;
+    }
+
+    el.innerHTML = `
+      <div class="list-card" style="background:var(--bg-soft,#F8FAFB);">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+          <b>${ar(filtered.length)} طالب في هذه الجهة</b>
+          <button class="btn btn-primary btn-sm" onclick="sendBulkSwapRequests()">${ICONS.swap}ابعت طلب للجميع دفعة واحدة</button>
+        </div>
+      </div>
+      ${filtered.map(s=>`
+      <div class="list-card">
+        <div class="list-card-top">
+          <b>${esc(s.name)}</b>
+          <span class="badge badge-teal">${esc(s.university)}</span>
+        </div>
+        <div class="muted" style="font-size:12.5px;">رقم الخريج: ${esc(s.grad_number)} — ${esc(s.hospital)}</div>
+        <div style="margin-top:10px;">
+          <button class="btn btn-primary btn-sm" onclick="sendSwapRequest('${escAttr(s.grad_number)}')">${ICONS.swap}ترغب في تبديل؟</button>
+        </div>
+      </div>
+    `).join('')}`;
+  }
+
+  async function sendBulkSwapRequests(){
+    if(!currentUser || currentProfile?.status!=='approved'){ toast('يرجى تسجيل الدخول أولاً','info'); navigate('auth'); return; }
+    if(!lastSearchResults.length){ toast('لا يوجد نتائج بحث حاليًا','info'); return; }
+    if(!confirm(`هل تريد إرسال طلب تبديل لكل الـ ${lastSearchResults.length} طالب في هذه الجهة؟`)) return;
+
+    const { data: applicant, error: aErr } = await sbClient
+      .from('students')
+      .select('hospital')
+      .eq('grad_number', currentProfile.grad_number)
+      .single();
+    if(aErr){ toast('لم يتم العثور على بياناتك','info'); return; }
+
+    const gradNumbers = lastSearchResults.map(s=>s.grad_number);
+    const { data: targets } = await sbClient
+      .from('students')
+      .select('id, grad_number, hospital, user_id')
+      .in('grad_number', gradNumbers);
+
+    const targetStudentIds = (targets||[]).map(t=>t.id);
+    const { data: existing } = await sbClient
+      .from('swap_requests')
+      .select('target_student_id')
+      .eq('applicant_id', currentProfile.id)
+      .in('target_student_id', targetStudentIds)
+      .in('status', ['pending','sent']);
+    const alreadyRequested = new Set((existing||[]).map(e=>e.target_student_id));
+
+    const toSend = (targets||[]).filter(t=> !alreadyRequested.has(t.id));
+    if(!toSend.length){ toast('لقد أرسلت طلبات لكل هؤلاء بالفعل','info'); return; }
+
+    const rows = toSend.map(t=>({
+      applicant_id: currentProfile.id,
+      target_student_id: t.id,
+      current_hospital: applicant.hospital,
+      target_hospital: t.hospital,
+      status: 'sent',
+      telegram: currentProfile.telegram || ''
+    }));
+
+    const { data: inserted, error: insErr } = await sbClient
+      .from('swap_requests')
+      .insert(rows)
+      .select('id, target_student_id');
+    if(insErr){ toast('فشل إرسال الطلبات: '+insErr.message,'info'); return; }
+
+    const notifRows = (inserted||[])
+      .map(r=>{
+        const t = toSend.find(x=>x.id===r.target_student_id);
+        return t?.user_id ? {
+          user_id: t.user_id,
+          text: `طلب تبديل ورد من ${currentProfile.name} (رقم الخريج: ${currentProfile.grad_number})`,
+          type: 'swap',
+          request_id: r.id,
+          status: 'pending',
+          read: false
+        } : null;
+      })
+      .filter(Boolean);
+
+    if(notifRows.length){
+      await sbClient.from('notifications').insert(notifRows);
+    }
+
+    toast(`تم إرسال طلب تبديل لـ ${toSend.length} شخص${alreadyRequested.size ? ` (تخطينا ${alreadyRequested.size} مُرسَل لهم مسبقًا)` : ''}`,'check');
+    navigate('myRequests');
+  }
+
+  async function sendSwapRequest(targetGradNumber){
+    if(!currentUser || currentProfile?.status!=='approved'){ toast('يرجى تسجيل الدخول أولاً','info'); navigate('auth'); return; }
+    if(targetGradNumber === currentProfile.grad_number){ toast('لا يمكنك إرسال طلب تبديل لنفسك','info'); return; }
+
+    // الحصول على معلومات الطالب المستهدف (قد لا يكون قد أنشأ حسابًا بعد، وهذا مقبول)
+    const { data: target, error: tErr } = await sbClient
+      .from('students')
+      .select('id, name, hospital, user_id')
+      .eq('grad_number', targetGradNumber)
+      .single();
+    if(tErr){ toast('لم يتم العثور على المرشح','info'); return; }
+
+    // الحصول على معلومات مقدم الطلب
+    const { data: applicant, error: aErr } = await sbClient
+      .from('students')
+      .select('id, hospital')
+      .eq('grad_number', currentProfile.grad_number)
+      .single();
+    if(aErr){ toast('لم يتم العثور على بياناتك','info'); return; }
+
+    // منع تكرار إرسال نفس الطلب لنفس الشخص أكتر من مرة وهو لسه معلّق
+    const { data: dup } = await sbClient
+      .from('swap_requests')
+      .select('id')
+      .eq('applicant_id', currentProfile.id)
+      .eq('target_student_id', target.id)
+      .in('status', ['pending','sent'])
+      .maybeSingle();
+    if(dup){ toast(`لقد أرسلت طلبًا لـ ${target.name} بالفعل، وهو لسه مستني الرد`,'info'); navigate('myRequests'); return; }
+
+    // إنشاء طلب تبديل مباشر جديد (مستقل تمامًا عن أي طلب "أرغب في إيجاد بديل" مفتوح)
+    const { data: newReq, error: insErr } = await sbClient
+      .from('swap_requests')
+      .insert({
+        applicant_id: currentProfile.id,
+        target_student_id: target.id,
+        current_hospital: applicant.hospital,
+        target_hospital: target.hospital,
+        status: 'sent',
+        telegram: currentProfile.telegram || ''
+      })
+      .select()
+      .single();
+    if(insErr){ toast('فشل إرسال الطلب: '+insErr.message,'info'); return; }
+    const requestId = newReq?.id;
+
+    // إشعار فوري فقط لو الطرف الآخر عنده حساب مفعّل بالفعل
+    // (لو لسه معندوش حساب، هيلاقي الطلب في "طلباتي" أول ما يسجّل)
+    if(target.user_id){
+      await sbClient
+        .from('notifications')
+        .insert({
+          user_id: target.user_id,
+          text: `طلب تبديل ورد من ${currentProfile.name} (رقم الخريج: ${currentProfile.grad_number})`,
+          type: 'swap',
+          request_id: requestId,
+          status: 'pending',
+          read: false
+        });
+      toast(`تم إرسال طلب تبديل إلى ${target.name}`,'check');
+    } else {
+      toast(`تم إرسال طلب تبديل — ${target.name} لسه معندوش حساب، وهيشوف طلبك في "طلباتي" أول ما يسجّل`,'check');
+    }
+    navigate('myRequests');
+  }
+
+  // ---------- MY REQUESTS ----------
+  async function pageMyRequests(){
+    if(!currentUser) return `<div class="empty-state">يرجى تسجيل الدخول أولاً</div>`;
+
+    // نحصل على id صف الطالب المرتبط بالمستخدم الحالي (لازم للفلترة بشكل صحيح)
+    const { data: myStudent } = await sbClient
+      .from('students')
+      .select('id')
+      .eq('grad_number', currentProfile?.grad_number)
+      .maybeSingle();
+
+    let query = sbClient
+      .from('swap_requests')
+      .select(`
+        *,
+        applicant:profiles!applicant_id(name, grad_number),
+        target_student:students(id, name, grad_number, user_id)
+      `)
+      .order('created_at', { ascending: false });
+
+    query = myStudent?.id
+      ? query.or(`applicant_id.eq.${currentProfile.id},target_student_id.eq.${myStudent.id}`)
+      : query.eq('applicant_id', currentProfile.id);
+
+    const { data, error } = await query;
+
+    if(error) return `<div class="empty-state">حدث خطأ: ${error.message}</div>`;
+    if(!data || data.length===0) return `<div class="empty-state">لا توجد طلبات</div>`;
+
+    // جلب بيانات التواصل الكاملة للطرف الآخر في الطلبات المعتمدة فقط
+    const otherIds = new Set();
+    data.forEach(r=>{
+      const isApplicant = r.applicant_id === currentProfile?.id;
+      const approved = r.status==='approved_by_both' || r.status==='approved_by_admin';
+      if(approved){
+        const oid = isApplicant ? r.target_student?.user_id : r.applicant_id;
+        if(oid) otherIds.add(oid);
+      }
+    });
+    let profilesMap = {};
+    if(otherIds.size){
+      const { data: profs } = await sbClient.from('profiles').select('id,name,telegram,grad_number').in('id', [...otherIds]);
+      (profs||[]).forEach(p=> profilesMap[p.id]=p);
+    }
+
+    return `
+    <div class="page-title">${ICONS.list}طلباتي</div>
+    <div class="page-sub">قائمة بطلبات التبديل التي تخصك — بيانات التواصل تظهر فقط بعد موافقة الطرفين</div>
+    ${data.map(r=>{
+      const isApplicant = r.applicant_id === currentProfile?.id;
+      const approved = r.status==='approved_by_both' || r.status==='approved_by_admin';
+      const otherId = isApplicant ? r.target_student?.user_id : r.applicant_id;
+      const otherProfile = otherId ? profilesMap[otherId] : null;
+      const otherHospital = isApplicant ? r.target_hospital : r.current_hospital;
+      let actions = '';
+      if(r.status === 'sent' && !isApplicant){
+        actions = `
+          <button class="btn btn-primary btn-sm" onclick="respondToSwapRequest('${r.id}', true)">${ICONS.check}قبول</button>
+          <button class="btn btn-danger btn-sm" onclick="respondToSwapRequest('${r.id}', false)">${ICONS.x}رفض</button>`;
+      } else if((r.status === 'pending' || r.status === 'sent') && isApplicant){
+        actions = `<button class="btn btn-danger btn-sm" onclick="cancelRequest('${r.id}')">${ICONS.x}إلغاء</button>`;
+      }
+      const cardMeta = otherProfile ? {
+        name: otherProfile.name,
+        grad_number: otherProfile.grad_number,
+        telegram: otherProfile.telegram,
+        hospital: otherHospital
+      } : null;
+      return `
+      <div class="list-card">
+        <div class="list-card-top">
+          <div>
+            <b>تبديل من ${esc(r.current_hospital)} إلى ${esc(r.target_hospital)}</b>
+            <div class="muted" style="font-size:11.5px;margin-top:4px;">${isApplicant ? 'مقدَّم من: أنت' : `مقدَّم من: ${esc(r.applicant?.name || 'مستخدم')}`} — ${new Date(r.created_at).toLocaleDateString('ar-EG')}</div>
+          </div>
+          <span class="badge ${statusMeta[r.status]?.cls}">${statusMeta[r.status]?.label}</span>
+        </div>
+        ${actions ? `<div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">${actions}</div>` : ''}
+        ${approved ? contactBlock(cardMeta) : ''}
+      </div>`;
+    }).join('')}`;
+  }
+
+  async function respondToSwapRequest(requestId, accept){
+    const newStatus = accept ? 'approved_by_both' : 'rejected';
+    const { data: req, error: getErr } = await sbClient
+      .from('swap_requests')
+      .select(`
+        status, applicant_id, current_hospital, target_hospital,
+        applicant:profiles!applicant_id(name, grad_number, telegram),
+        target_student:students(user_id)
+      `)
+      .eq('id', requestId)
+      .single();
+    if(getErr){ toast('لم يتم العثور على الطلب','info'); return; }
+    if(req.status !== 'sent'){ toast('هذا الطلب لم يعد قائمًا (تم إلغاؤه أو الرد عليه بالفعل)','info'); navigate('myRequests'); return; }
+
+    await sbClient
+      .from('swap_requests')
+      .update({ status: newStatus })
+      .eq('id', requestId);
+
+    // بيانات مقدّم الطلب — تُعرض فورًا هنا (أنا اللي بقبل/بارفض بصفتي الطرف المُستهدَف)
+    const applicantMeta = accept ? {
+      name: req.applicant?.name || '',
+      grad_number: req.applicant?.grad_number || '',
+      telegram: req.applicant?.telegram || '',
+      hospital: req.current_hospital || ''
+    } : null;
+
+    // بياناتي أنا — تُرسل لمقدّم الطلب عند القبول
+    const myMeta = accept ? {
+      name: currentProfile.name,
+      grad_number: currentProfile.grad_number,
+      telegram: currentProfile.telegram || '',
+      hospital: req.target_hospital || ''
+    } : null;
+
+    const otherUserId = req.applicant_id;
+    if(otherUserId){
+      await sbClient
+        .from('notifications')
+        .insert({
+          user_id: otherUserId,
+          text: accept ? `تمت الموافقة على طلب التبديل من ${currentProfile.name}` : `تم رفض طلب التبديل من ${currentProfile.name}`,
+          type: accept ? 'approval' : 'rejection',
+          request_id: requestId,
+          status: accept ? 'accepted' : 'rejected',
+          meta: myMeta,
+          read: false
+        });
+    }
+    toast(accept ? 'تم قبول الطلب — بيانات التواصل ظاهرة تحت' : 'تم رفض الطلب','check');
+    navigate('myRequests', { justAccepted: accept ? requestId : null, contactMeta: applicantMeta });
+  }
+
+  async function cancelRequest(id){
+    const { data: req } = await sbClient
+      .from('swap_requests')
+      .select('target_student:students(user_id)')
+      .eq('id', id)
+      .single();
+
+    await sbClient.from('swap_requests').update({ status: 'cancelled' }).eq('id', id);
+
+    // إقفال أي إشعار "طلب تبديل" مرتبط عشان زرار القبول/الرفض يختفي عند الطرف الآخر
+    await sbClient
+      .from('notifications')
+      .update({ status: 'cancelled', read: true })
+      .eq('request_id', id)
+      .eq('type', 'swap');
+
+    // تبليغ الطرف الآخر لو كان عنده حساب
+    const otherUserId = req?.target_student?.user_id;
+    if(otherUserId){
+      await sbClient
+        .from('notifications')
+        .insert({
+          user_id: otherUserId,
+          text: `تم إلغاء طلب التبديل المرسل إليك من ${currentProfile.name}`,
+          type: 'cancellation',
+          request_id: id,
+          read: false
+        });
+    }
+
+    toast('تم إلغاء الطلب');
+    navigate('myRequests');
+  }
+
+  // ---------- NOTIFICATIONS ----------
+  function contactBlock(meta){
+    if(!meta) return '';
+    return `
+    <div style="margin-top:12px;border-top:1px solid var(--border);padding-top:12px;">
+      <div class="muted" style="font-size:12px;margin-bottom:8px;">بيانات الطرف الآخر</div>
+      <dl class="result-dl">
+        <div><dt>الاسم</dt><dd>${esc(meta.name||'—')}</dd></div>
+        <div><dt>رقم الخريج</dt><dd>${esc(meta.grad_number||'—')}</dd></div>
+        <div class="full"><dt>الجهة</dt><dd>${esc(meta.hospital||'—')}</dd></div>
+      </dl>
+      ${meta.telegram ? `<a class="telegram-link" href="https://t.me/${escAttr(sanitizeTelegram(meta.telegram))}" target="_blank" rel="noopener">${ICONS.telegram}تواصل عبر تليجرام — ${esc(meta.telegram)}</a>` : `<span class="muted" style="font-size:12px;">لم يسجّل الطرف الآخر حساب تليجرام</span>`}
+    </div>`;
+  }
+
+  async function pageNotifications(){
+    if(!currentUser) return `<div class="empty-state">يرجى تسجيل الدخول أولاً</div>`;
+
+    const { data, error } = await sbClient
+      .from('notifications')
+      .select('*')
+      .eq('user_id', currentUser.id)
+      .order('created_at', { ascending: false });
+
+    const { data: announcements } = await sbClient
+      .from('announcements')
+      .select('*')
+      .order('created_at', { ascending: false });
+
+    if(error) return `<div class="empty-state">خطأ: ${error.message}</div>`;
+
+    const announcementsHtml = (announcements||[]).length ? `
+    <div class="page-sub" style="margin-top:0;">إعلانات</div>
+    ${announcements.map(a=>`
+      <div class="list-card" style="border-color:var(--accent-amber, #D97706);background:rgba(217,119,6,.05);">
+        <div style="font-size:14px;">${esc(a.text)}</div>
+        ${a.button_label && a.button_url ? `<a class="btn btn-sm" href="${escAttr(a.button_url)}" target="_blank" rel="noopener" style="margin-top:10px;text-decoration:none;background:#F59E0B;border-color:#F59E0B;color:#fff;">${esc(a.button_label)}</a>` : ''}
+      </div>
+    `).join('')}
+    ` : '';
+
+    if((!data || data.length===0) && !announcementsHtml){
+      return `<div class="page-title">${ICONS.bell}الإشعارات</div><div class="empty-state">لا توجد إشعارات</div>`;
+    }
+
+    return `
+    <div class="page-title">${ICONS.bell}الإشعارات</div>
+    ${announcementsHtml}
+    ${(data&&data.length) ? `<div class="page-sub" style="margin-top:${announcementsHtml?'22px':'0'};">إشعاراتك</div>` : ''}
+    ${(data||[]).map(n=>{
+      const isPendingSwap = n.type==='swap' && (n.status||'pending')==='pending';
+      const isAcceptedSwap = n.type==='swap' && n.status==='accepted';
+      const isRejectedSwap = n.type==='swap' && n.status==='rejected';
+      return `
+      <div class="list-card" style="${n.read?'':'border-color:var(--primary);'}">
+        <div class="list-card-top">
+          <div>
+            <div>${esc(n.text)}</div>
+            <div class="muted" style="font-size:11.5px;">${new Date(n.created_at).toLocaleString('ar-EG')}</div>
+          </div>
+          ${!n.read ? `<span class="badge badge-teal">جديد</span>` : (isAcceptedSwap ? `<span class="badge badge-green">تم القبول</span>` : isRejectedSwap ? `<span class="badge badge-red">تم الرفض</span>` : '')}
+        </div>
+        ${isPendingSwap ? `
+          <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;">
+            <button class="btn btn-primary btn-sm" onclick="respondFromNotification('${n.id}','${n.request_id}',true)">${ICONS.check}قبول</button>
+            <button class="btn btn-danger btn-sm" onclick="respondFromNotification('${n.id}','${n.request_id}',false)">${ICONS.x}رفض</button>
+          </div>` : ''}
+        ${(isAcceptedSwap || n.type==='approval') ? contactBlock(n.meta) : ''}
+        ${(!n.read && !isPendingSwap) ? `
+          <div style="margin-top:10px;">
+            <button class="btn btn-ghost btn-sm" onclick="markNotificationRead('${n.id}')">تحديد كمقروء</button>
+          </div>` : ''}
+      </div>`;
+    }).join('')}`;
+  }
+
+  async function markNotificationRead(id){
+    await sbClient.from('notifications').update({ read: true }).eq('id', id);
+    navigate('notifications');
+  }
+
+  // الرد على طلب تبديل مباشرة من داخل الإشعارات
+  async function respondFromNotification(notifId, relatedRequestId, accept){
+    if(!relatedRequestId || relatedRequestId==='null'){ toast('لا يمكن تنفيذ هذا الإجراء على هذا الإشعار','info'); return; }
+
+    const { data: req, error: getErr } = await sbClient
+      .from('swap_requests')
+      .select(`
+        status, applicant_id, current_hospital, target_hospital,
+        applicant:profiles!applicant_id(name, grad_number, telegram)
+      `)
+      .eq('id', relatedRequestId)
+      .single();
+    if(getErr || !req){ toast('لم يتم العثور على الطلب','info'); return; }
+    if(req.status !== 'sent'){
+      toast('هذا الطلب لم يعد قائمًا (تم إلغاؤه من مقدّمه أو الرد عليه بالفعل)','info');
+      await sbClient.from('notifications').update({ read: true }).eq('id', notifId);
+      navigate('notifications');
+      return;
+    }
+
+    const newStatus = accept ? 'approved_by_both' : 'rejected';
+    await sbClient.from('swap_requests').update({ status: newStatus }).eq('id', relatedRequestId);
+
+    // بيانات مقدّم الطلب — تُعرض لي فورًا هنا في حالة القبول فقط
+    const applicantMeta = accept ? {
+      name: req.applicant?.name || '',
+      grad_number: req.applicant?.grad_number || '',
+      telegram: req.applicant?.telegram || '',
+      hospital: req.current_hospital || ''
+    } : null;
+
+    await sbClient.from('notifications')
+      .update({ read: true, status: accept ? 'accepted' : 'rejected', meta: applicantMeta })
+      .eq('id', notifId);
+
+    // إشعار مقدّم الطلب بالنتيجة + بياناتي أنا للتواصل عند القبول
+    const myMeta = accept ? {
+      name: currentProfile.name,
+      grad_number: currentProfile.grad_number,
+      telegram: currentProfile.telegram || '',
+      hospital: req.target_hospital || ''
+    } : null;
+
+    await sbClient.from('notifications').insert({
+      user_id: req.applicant_id,
+      text: accept ? `تمت الموافقة على طلب التبديل من ${currentProfile.name}` : `تم رفض طلب التبديل من ${currentProfile.name}`,
+      type: accept ? 'approval' : 'rejection',
+      request_id: relatedRequestId,
+      status: accept ? 'accepted' : 'rejected',
+      meta: myMeta,
+      read: false
+    });
+
+    toast(accept ? 'تم قبول الطلب — بيانات التواصل ظاهرة تحت' : 'تم رفض الطلب','check');
+    navigate('notifications');
+  }
+
+  // ---------- UNIVERSITIES ----------
+  async function pageUniversities(){
+    // إحصائيات مجمّعة من قاعدة البيانات مباشرة بدل تحميل كل الصفوف
+    const { data: rows, error } = await sbClient.rpc('get_university_stats');
+    if(error) return `<div class="empty-state">خطأ في تحميل البيانات: ${esc(error.message)}</div>`;
+
+    const univs = (rows||[]).map(r=>({
+      u: r.university, t: r.total, f: r.first_choice,
+      p: r.total ? ((r.first_choice/r.total)*100).toFixed(1) : '0.0'
+    })); // الدالة بترجّع النتيجة مرتّبة تنازليًا بالفعل
+
+    setTimeout(()=>drawUniversityChart(univs),0);
+    return `
+    <div class="page-title">${ICONS.graduation}تحليل الجامعات</div>
+    <div class="page-sub">مرتبة تنازليًا حسب عدد الطلاب — مرّر الفأرة على الرسم لعرض اسم كل جامعة وعدد طلابها</div>
+    <div class="chart-container">
+      <canvas id="univChart" width="200" height="200"></canvas>
+      <div id="univTooltip" class="chart-tooltip" style="display:none;"></div>
+    </div>
+    <div class="table-scroll">
+    <table class="data-table">
+      <thead><tr><th>الجامعة</th><th>عدد الطلاب</th><th>النسبة %</th></tr></thead>
+      <tbody>
+      ${univs.map(u=>`<tr><td><b>${esc(u.u)}</b></td><td>${ar(u.t)}</td><td>${u.p}%</td></tr>`).join('')}
+      </tbody>
+    </table>
+    </div>`;
+  }
+
+  function drawUniversityChart(univs){
+    const canvas = document.getElementById('univChart');
+    const tooltip = document.getElementById('univTooltip');
+    if(!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const total = univs.reduce((s,d)=>s+d.t,0);
+    if(total===0) return;
+    const colors = ['#0D9488','#D97706','#2563EB','#7C3AED','#DC2626','#16A34A','#CA8A04','#EA580C','#0891B2','#4F46E5','#DB2777','#65A30D'];
+    const cx=100, cy=100, r=85, rInner=45;
+    let start = -Math.PI/2;
+    const slices = univs.map((u,i)=>{
+      const angle = (u.t/total)*2*Math.PI;
+      const slice = { label:u.u, value:u.t, pct:((u.t/total)*100).toFixed(1), start, end:start+angle, color: colors[i%colors.length] };
+      start += angle;
+      return slice;
+    });
+
+    function draw(hoverIdx){
+      ctx.clearRect(0,0,200,200);
+      slices.forEach((s,i)=>{
+        const isHover = i===hoverIdx;
+        const mid = (s.start+s.end)/2;
+        const off = isHover ? 4 : 0;
+        const ox = Math.cos(mid)*off, oy = Math.sin(mid)*off;
+        ctx.beginPath();
+        ctx.moveTo(cx+ox, cy+oy);
+        ctx.arc(cx+ox, cy+oy, r, s.start, s.end);
+        ctx.closePath();
+        ctx.fillStyle = s.color;
+        ctx.globalAlpha = (hoverIdx==null || isHover) ? 1 : 0.5;
+        ctx.fill();
+        ctx.globalAlpha = 1;
+      });
+      ctx.beginPath();
+      ctx.arc(cx,cy,rInner,0,2*Math.PI);
+      ctx.fillStyle='#FFFFFF';
+      ctx.fill();
+      ctx.strokeStyle='#fff';
+      ctx.lineWidth=2;
+      ctx.stroke();
+      ctx.fillStyle='#0F766E';
+      ctx.font='bold 14px Cairo';
+      ctx.textAlign='center';
+      ctx.textBaseline='middle';
+      ctx.fillText(ar(total),cx,cy-6);
+      ctx.fillStyle='#5B6E6A';
+      ctx.font='10px Cairo';
+      ctx.fillText('طلاب',cx,cy+12);
+    }
+    draw(null);
+
+    function hitTest(mx,my){
+      const dx = mx-cx, dy = my-cy;
+      const dist = Math.sqrt(dx*dx+dy*dy);
+      if(dist>r || dist<rInner) return -1;
+      let ang = Math.atan2(dy,dx);
+      if(ang < -Math.PI/2) ang += 2*Math.PI;
+      for(let i=0;i<slices.length;i++){
+        if(ang>=slices[i].start && ang<slices[i].end) return i;
+      }
+      return -1;
+    }
+
+    canvas.onmousemove = function(e){
+      const rect = canvas.getBoundingClientRect();
+      const scaleX = canvas.width/rect.width, scaleY = canvas.height/rect.height;
+      const mx = (e.clientX-rect.left)*scaleX;
+      const my = (e.clientY-rect.top)*scaleY;
+      const idx = hitTest(mx,my);
+      if(idx>=0){
+        draw(idx);
+        const s = slices[idx];
+        tooltip.style.display='block';
+        tooltip.innerHTML = `<b>${esc(s.label)}</b><br>${ar(s.value)} طالب — ${s.pct}%`;
+        tooltip.style.left = (e.clientX - rect.left + 12) + 'px';
+        tooltip.style.top = (e.clientY - rect.top + 12) + 'px';
+      } else {
+        draw(null);
+        tooltip.style.display='none';
+      }
+    };
+    canvas.onmouseleave = function(){
+      draw(null);
+      tooltip.style.display='none';
+    };
+  }
+
+  // ---------- HOSPITALS ----------
+  let hospList = []; // [{h, t}]
+  let hospNamesCache = {}; // hospital -> [{name, university}]
+
+  async function pageHospitals(){
+    setTimeout(()=>applyHospFilter(),0);
+    return `
+    <div class="page-title">${ICONS.hospital}الجهات والمستشفيات</div>
+    <div class="page-sub">مرتبة تنازليًا حسب عدد الطلاب — اضغط على أي جهة لعرض الأسماء</div>
+    <div class="filters-bar">
+      <input id="fHosp" placeholder="ابحث باسم الجهة..." oninput="applyHospFilter()" style="min-width:260px;">
+    </div>
+    <div class="table-scroll">
+    <table class="data-table">
+      <thead><tr><th>الجهة</th><th>عدد الطلاب</th></tr></thead>
+      <tbody id="hospTableBody"></tbody>
+    </table>
+    </div>`;
+  }
+
+  async function applyHospFilter(){
+    const q = normalizeArabic(document.getElementById('fHosp')?.value || '');
+    const body0 = document.getElementById('hospTableBody');
+    if(body0) body0.innerHTML = `<tr><td colspan="2"><div class="empty-state">${ICONS.clock}<div style="margin-top:8px;">جاري تحميل البيانات...</div></div></td></tr>`;
+
+    // نجيب العدّاد بس من قاعدة البيانات (سريع جدًا) — الأسماء تتحمّل عند الضغط بس
+    const { data, error } = await sbClient.rpc('get_hospital_stats', { search: q || null });
+    if(error){
+      if(body0) body0.innerHTML = `<tr><td colspan="2"><div class="empty-state">${ICONS.x}<div style="margin-top:8px;">تعذر تحميل بيانات الجهات: ${esc(error.message)}</div></div></td></tr>`;
+      return;
+    }
+
+    hospList = (data||[]).map(r=>({ h: r.hospital, t: r.total }));
+
+    const body = document.getElementById('hospTableBody');
+    if(!body) return;
+    body.innerHTML = hospList.length ? hospList.map((item,idx)=>`
+      <tr class="hosp-row" onclick="toggleHospNames(${idx})">
+        <td><b>${esc(item.h)}</b></td>
+        <td>${ar(item.t)}</td>
+      </tr>
+      <tr id="hospNamesRow-${idx}" style="display:none;">
+        <td colspan="2" style="padding:0;">
+          <div class="hosp-names-inline" id="hospNamesInline-${idx}">
+            <div class="muted" style="font-size:12.5px;">${ICONS.clock} جاري تحميل الأسماء...</div>
+          </div>
+        </td>
+      </tr>
+    `).join('') : `<tr><td colspan="2"><div class="empty-state">لا توجد نتائج</div></td></tr>`;
+  }
+
+  async function toggleHospNames(idx){
+    const row = document.getElementById('hospNamesRow-'+idx);
+    if(!row) return;
+    const wasOpen = row.style.display === 'table-row';
+    row.style.display = wasOpen ? 'none' : 'table-row';
+    if(wasOpen) return;
+
+    const item = hospList[idx];
+    if(!item) return;
+    const inline = document.getElementById('hospNamesInline-'+idx);
+
+    // تحميل كسول: نجيب أسماء هذه الجهة بس (مش كل الجهات) وأول مرة فقط
+    if(!hospNamesCache[item.h]){
+      const { data, error } = await sbClient
+        .from('students')
+        .select('name, university')
+        .eq('hospital', item.h)
+        .order('name');
+      if(error){
+        if(inline) inline.innerHTML = `<div class="muted" style="font-size:12.5px;">تعذر تحميل الأسماء</div>`;
+        return;
+      }
+      hospNamesCache[item.h] = data || [];
+    }
+
+    if(inline){
+      inline.innerHTML = `
+        ${hospNamesCache[item.h].map(s=>`
+          <div class="hosp-name-row">
+            <span>${esc(s.name)}</span>
+            <span class="muted">${esc(s.university)}</span>
+          </div>`).join('')}
+        <a class="btn btn-primary btn-sm" href="${TELEGRAM_CHANNEL_URL}" target="_blank" rel="noopener" style="margin-top:10px;">${ICONS.telegram}اشترك في قناة تليجرام</a>
+      `;
+    }
+  }
+
+  // ---------- ADMIN ----------
+  async function pageAdmin(sub){
+    sub = sub || 'accounts';
+
+    // جلب طلبات الحسابات
+    const { data: accRequests, error: accErr } = await sbClient
+      .from('account_requests')
+      .select('*')
+      .order('requested_at', { ascending: false });
+
+    // جلب طلبات التبديل
+    const { data: swapReqs, error: swapErr } = await sbClient
+      .from('swap_requests')
+      .select('*, applicant:profiles(name), target_student:students(name)')
+      .order('created_at', { ascending: false });
+
+    // جلب كل المستخدمين المسجّلين (للتحكم في التفعيل/التعطيل)
+    const { data: allProfiles } = await sbClient
+      .from('profiles')
+      .select('id, name, grad_number, telegram, status, role')
+      .order('name');
+
+    const pendingCount = accRequests?.filter(a=>a.status==='pending').length || 0;
+    const tabs = [
+      ['accounts', `حسابات المستخدمين${pendingCount?' ('+ar(pendingCount)+')':''}`, 'idcard'],
+      ['requests', 'طلبات التبديل', 'clipboard'],
+      ['broadcast', 'الإعلانات', 'bell'],
+      ['reports', 'التقارير والإحصائيات', 'chart'],
+    ];
+
+    let content = '';
+    if(sub==='accounts'){
+      content = accRequests?.length ? `
+      <table class="data-table responsive-stack">
+        <thead><tr><th>الاسم</th><th>رقم الخريج</th><th>الهاتف</th><th>تليجرام</th><th>التاريخ</th><th>الحالة</th><th>إجراء</th></tr></thead>
+        <tbody>
+        ${accRequests.map(a=>`
+          <tr>
+            <td data-label="الاسم">${esc(a.name)}</td>
+            <td data-label="رقم الخريج">${esc(a.grad_number)}</td>
+            <td data-label="الهاتف">${esc(a.phone)}</td>
+            <td data-label="تليجرام">${a.telegram ? esc(a.telegram) : '—'}</td>
+            <td data-label="التاريخ">${a.requested_at?.slice(0,10)}</td>
+            <td data-label="الحالة"><span class="badge ${accountStatusMeta[a.status]?.cls}">${accountStatusMeta[a.status]?.label}</span></td>
+            <td data-label="إجراء">${a.status==='pending' ? `
+              <button class="btn btn-primary btn-sm" onclick="adminAccountAction('${a.id}','approved')">اعتماد</button>
+              <button class="btn btn-danger btn-sm" onclick="adminAccountAction('${a.id}','rejected')">رفض</button>` : '—'}
+            </td>
+          </tr>`).join('')}
+        </tbody>
+      </table>` : `<div class="empty-state">لا توجد طلبات حسابات</div>`;
+
+      content += `
+      <div class="page-title" style="font-size:16px;margin-top:26px;">${ICONS.idcard}كل المستخدمين المسجّلين (${ar(allProfiles?.length||0)})</div>
+      <table class="data-table responsive-stack">
+        <thead><tr><th>الاسم</th><th>رقم الخريج</th><th>تليجرام</th><th>الدور</th><th>الحالة</th><th>إجراء</th></tr></thead>
+        <tbody>
+        ${(allProfiles||[]).map(p=>`
+          <tr>
+            <td data-label="الاسم">${esc(p.name)}</td>
+            <td data-label="رقم الخريج">${esc(p.grad_number)}</td>
+            <td data-label="تليجرام">${p.telegram ? esc(p.telegram) : '—'}</td>
+            <td data-label="الدور">${p.role==='admin' ? `<span class="badge badge-purple">${ICONS.star}مشرف</span>` : 'مستخدم'}</td>
+            <td data-label="الحالة"><span class="badge ${accountStatusMeta[p.status]?.cls}">${accountStatusMeta[p.status]?.label}</span></td>
+            <td data-label="إجراء">${p.role==='admin' ? '—' : `<div style="display:flex;gap:6px;flex-wrap:wrap;">
+              ${p.status==='suspended'
+                ? `<button class="btn btn-primary btn-sm" onclick="adminToggleSuspend('${p.id}','approved')">${ICONS.check}إعادة تفعيل</button>`
+                : `<button class="btn btn-danger btn-sm" onclick="adminToggleSuspend('${p.id}','suspended')">${ICONS.x}تعطيل</button>`
+              }
+              <button class="btn btn-danger btn-sm" onclick="adminDeleteAccount('${p.id}','${escAttr(p.grad_number)}','${escAttr(p.name)}')">${ICONS.x}حذف نهائي</button>
+            </div>`}</td>
+          </tr>`).join('')}
+        </tbody>
+      </table>`;
+    } else if(sub==='requests'){
+      content = `
+      <div class="page-sub" style="margin-top:-6px;">إجراء الاعتماد/الرفض هنا مخصص فقط للطلبات المفتوحة ("أرغب في إيجاد بديل") اللي محتاجة وسيط من الإدارة — أما الطلبات المباشرة بين طالبَين فبيتم التعامل معها بينهم مباشرة.</div>
+      <table class="data-table responsive-stack">
+        <thead><tr><th>المقدم</th><th>المرشح</th><th>من</th><th>إلى</th><th>الحالة</th><th>التاريخ</th><th>إجراء</th></tr></thead>
+        <tbody>
+        ${swapReqs?.map(r=>`
+          <tr>
+            <td data-label="المقدم">${esc(r.applicant?.name)}</td>
+            <td data-label="المرشح">${esc(r.target_student?.name || '—')}</td>
+            <td data-label="من">${esc(r.current_hospital)}</td>
+            <td data-label="إلى">${esc(r.target_hospital)}</td>
+            <td data-label="الحالة"><span class="badge ${statusMeta[r.status]?.cls}">${statusMeta[r.status]?.label}</span></td>
+            <td data-label="التاريخ">${r.created_at?.slice(0,10)}</td>
+            <td data-label="إجراء">${(r.status==='pending' && !r.target_student_id) ? `
+              <button class="btn btn-primary btn-sm" onclick="adminAction('${r.id}','approved_by_admin')">اعتماد</button>
+              <button class="btn btn-danger btn-sm" onclick="adminAction('${r.id}','rejected')">رفض</button>` : '—'}
+            </td>
+          </tr>`).join('')}
+        </tbody>
+      </table>`;
+    } else if(sub==='broadcast'){
+      const { data: announcements } = await sbClient
+        .from('announcements')
+        .select('*')
+        .order('created_at', { ascending: false });
+      const editing = announcements?.find(a=>a.id === editingAnnouncementId);
+
+      content = `
+      <div class="page-sub" style="margin-top:-6px;">الإعلان بيظهر لكل الحسابات — القديمة والجديدة — لحد ما تعدّله أو تمسحه. تقدر تضيف زرار اختياري (زي "تابعونا") يوديهم لأي رابط.</div>
+      <div class="card" style="max-width:560px;">
+        <div class="form-group">
+          <label>نص الإعلان</label>
+          <textarea id="annText" rows="4" placeholder="مثال: تابعونا على فيسبوك عشان يوصلك كل جديد، وتابع قناة تليجرام @Darrrwish للتحديثات والدعم." style="width:100%;font-family:'Cairo',sans-serif;padding:10px;border:1.5px solid var(--border);border-radius:10px;resize:vertical;">${editing ? esc(editing.text) : ''}</textarea>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>اسم الزرار (اختياري)</label>
+            <input id="annBtnLabel" placeholder="مثال: تابعونا" value="${editing ? esc(editing.button_label||'') : ''}">
+          </div>
+          <div class="form-group">
+            <label>رابط الزرار (اختياري)</label>
+            <input id="annBtnUrl" placeholder="https://..." value="${editing ? esc(editing.button_url||'') : ''}">
+          </div>
+        </div>
+        <div style="display:flex;gap:8px;margin-top:6px;">
+          <button class="btn btn-primary" onclick="adminSaveAnnouncement(${editing ? `'${editing.id}'` : 'null'})">${ICONS.bell}${editing ? 'حفظ التعديل' : 'نشر الإعلان'}</button>
+          ${editing ? `<button class="btn btn-ghost" onclick="adminCancelEditAnnouncement()">إلغاء</button>` : ''}
+        </div>
+      </div>
+
+      <div class="page-title" style="font-size:16px;margin-top:26px;">الإعلانات الحالية (${ar(announcements?.length||0)})</div>
+      ${announcements?.length ? announcements.map(a=>`
+        <div class="list-card">
+          <div style="font-size:14px;">${esc(a.text)}</div>
+          ${a.button_label && a.button_url ? `<div class="muted" style="font-size:12px;margin-top:6px;">الزرار: ${esc(a.button_label)} ← ${esc(a.button_url)}</div>` : ''}
+          <div class="muted" style="font-size:11.5px;margin-top:4px;">${new Date(a.created_at).toLocaleString('ar-EG')}</div>
+          <div style="margin-top:10px;display:flex;gap:8px;">
+            <button class="btn btn-ghost btn-sm" onclick="adminEditAnnouncement('${a.id}')">${ICONS.info}تعديل</button>
+            <button class="btn btn-danger btn-sm" onclick="adminDeleteAnnouncement('${a.id}')">${ICONS.x}حذف</button>
+          </div>
+        </div>
+      `).join('') : `<div class="empty-state">لا توجد إعلانات منشورة حاليًا</div>`}
+      `;
+    } else {
+      const { data: homeStats } = await sbClient.rpc('get_home_stats');
+      const approvedCount = allProfiles?.filter(p=>p.status==='approved').length || 0;
+      const pendingAcc = allProfiles?.filter(p=>p.status==='pending').length || 0;
+      const suspendedCount = allProfiles?.filter(p=>p.status==='suspended').length || 0;
+      const swapByStatus = {};
+      (swapReqs||[]).forEach(r=>{ swapByStatus[r.status] = (swapByStatus[r.status]||0) + 1; });
+
+      content = `
+      <div class="page-sub" style="margin-top:-6px;">نظرة عامة على بيانات النتيجة وتفاعل المستخدمين</div>
+      <div class="kpi-grid">
+        <div class="kpi"><b>${ar(homeStats?.total||0)}</b><span>إجمالي الخريجين بالنتيجة</span></div>
+        <div class="kpi"><b>${ar(allProfiles?.length||0)}</b><span>حسابات مسجّلة</span></div>
+        <div class="kpi"><b>${ar(approvedCount)}</b><span>حسابات مفعّلة</span></div>
+        <div class="kpi"><b>${ar(pendingAcc)}</b><span>حسابات قيد المراجعة</span></div>
+        <div class="kpi"><b>${ar(suspendedCount)}</b><span>حسابات معطّلة</span></div>
+        <div class="kpi"><b>${ar(swapReqs?.length||0)}</b><span>إجمالي طلبات التبديل</span></div>
+        <div class="kpi"><b>${ar(swapByStatus['sent']||0)}</b><span>طلبات مباشرة مستنية ردّ</span></div>
+        <div class="kpi"><b>${ar(swapByStatus['approved_by_both']||0)}</b><span>تبديلات تمت بالموافقة</span></div>
+        <div class="kpi"><b>${ar(swapByStatus['approved_by_admin']||0)}</b><span>طلبات معتمدة من الإدارة</span></div>
+        <div class="kpi"><b>${ar(swapByStatus['rejected']||0)}</b><span>طلبات مرفوضة</span></div>
+        <div class="kpi"><b>${ar((swapByStatus['pending']||0))}</b><span>طلبات مفتوحة تستنى وسيط</span></div>
+        <div class="kpi"><b>${ar(swapByStatus['cancelled']||0)}</b><span>طلبات ملغاة</span></div>
+      </div>`;
+    }
+
+    return `
+    <div class="page-title">${ICONS.chart}لوحة تحكم المشرف</div>
+    <div class="admin-layout">
+      <div class="admin-side">
+        ${tabs.map(([k,label,ic])=>`<a href="javascript:void(0)" class="${sub===k?'active':''}" onclick="navigate('admin',{sub:'${k}'})">${ICONS[ic]}${label}</a>`).join('')}
+      </div>
+      <div>${content}</div>
+    </div>`;
+  }
+
+  async function adminAction(id, status){
+    const { data: req } = await sbClient
+      .from('swap_requests')
+      .select('applicant_id, current_hospital, target_hospital')
+      .eq('id', id)
+      .single();
+
+    await sbClient.from('swap_requests').update({ status }).eq('id', id);
+
+    // تبليغ صاحب الطلب بقرار الإدارة
+    if(req?.applicant_id){
+      await sbClient
+        .from('notifications')
+        .insert({
+          user_id: req.applicant_id,
+          text: status==='approved_by_admin'
+            ? `اعتمدت الإدارة طلب التبديل الخاص بك (من ${req.current_hospital} إلى ${req.target_hospital})`
+            : `تم رفض طلب التبديل الخاص بك من قِبل الإدارة`,
+          type: status==='approved_by_admin' ? 'approval' : 'rejection',
+          request_id: id,
+          read: false
+        });
+    }
+
+    toast('تم تحديث حالة الطلب','check');
+    navigate('admin', { sub: 'requests' });
+  }
+
+  async function adminAccountAction(id, status){
+    await sbClient.from('account_requests').update({ status }).eq('id', id);
+    if(status === 'approved'){
+      // تحديث حالة المستخدم في profiles
+      const { data: req } = await sbClient
+        .from('account_requests')
+        .select('grad_number, phone, telegram, name')
+        .eq('id', id)
+        .single();
+      if(req){
+        // البحث عن المستخدم عن طريق grad_number
+        const { data: profile } = await sbClient
+          .from('profiles')
+          .select('id')
+          .eq('grad_number', req.grad_number)
+          .single();
+        if(profile){
+          await sbClient
+            .from('profiles')
+            .update({ status: 'approved', role: 'user' })
+            .eq('id', profile.id);
+          // ربط صف الطالب في جدول students بحساب المستخدم — ضروري لعمل
+          // الإشعارات وطلبات التبديل والمرشحين بشكل صحيح
+          await sbClient
+            .from('students')
+            .update({ user_id: profile.id })
+            .eq('grad_number', req.grad_number);
+        }
+      }
+    }
+    toast(status==='approved' ? 'تم اعتماد الحساب' : 'تم رفض الحساب','check');
+    navigate('admin', { sub: 'accounts' });
+  }
+
+  async function adminToggleSuspend(profileId, newStatus){
+    await sbClient.from('profiles').update({ status: newStatus }).eq('id', profileId);
+    toast(newStatus==='suspended' ? 'تم تعطيل الحساب' : 'تم إعادة تفعيل الحساب','check');
+    navigate('admin', { sub: 'accounts' });
+  }
+
+  async function adminDeleteAccount(profileId, gradNumber, name){
+    if(!confirm(`هل أنت متأكد من حذف حساب "${name}" نهائيًا؟ هذا الإجراء لا يمكن التراجع عنه.`)) return;
+
+    // تنظيف كل البيانات المرتبطة بالحساب (كمُرسِل وكمُستهدَف في طلبات التبديل)
+    await sbClient.from('notifications').delete().eq('user_id', profileId);
+    const { data: sRow } = await sbClient.from('students').select('id').eq('grad_number', gradNumber).maybeSingle();
+    const orParts = [`applicant_id.eq.${profileId}`];
+    if(sRow?.id) orParts.push(`target_student_id.eq.${sRow.id}`);
+    await sbClient.from('swap_requests').delete().or(orParts.join(','));
+    await sbClient.from('account_requests').delete().eq('grad_number', gradNumber);
+    await sbClient.from('students').update({ user_id: null }).eq('grad_number', gradNumber);
+
+    const { error } = await sbClient.from('profiles').delete().eq('id', profileId);
+    if(error){ toast('فشل حذف الحساب: '+error.message,'info'); return; }
+
+    toast('تم حذف الحساب نهائيًا','check');
+    navigate('admin', { sub: 'accounts' });
+  }
+
+  let editingAnnouncementId = null;
+
+  function adminEditAnnouncement(id){
+    editingAnnouncementId = id;
+    navigate('admin', { sub: 'broadcast' });
+  }
+
+  function adminCancelEditAnnouncement(){
+    editingAnnouncementId = null;
+    navigate('admin', { sub: 'broadcast' });
+  }
+
+  async function adminSaveAnnouncement(id){
+    const text = (document.getElementById('annText')?.value || '').trim();
+    const buttonLabel = (document.getElementById('annBtnLabel')?.value || '').trim();
+    const buttonUrl = (document.getElementById('annBtnUrl')?.value || '').trim();
+    if(!text){ toast('اكتب نص الإعلان الأول','info'); return; }
+    if((buttonLabel && !buttonUrl) || (!buttonLabel && buttonUrl)){
+      toast('لازم تدخل اسم الزرار ورابطه مع بعض، أو تسيبهم فاضيين','info'); return;
+    }
+    if(buttonUrl && !/^https?:\/\//i.test(buttonUrl)){
+      toast('رابط الزرار لازم يبدأ بـ http:// أو https://','info'); return;
+    }
+
+    const payload = {
+      text,
+      button_label: buttonLabel || null,
+      button_url: buttonUrl || null,
+      updated_at: new Date().toISOString()
+    };
+
+    let error;
+    if(id){
+      ({ error } = await sbClient.from('announcements').update(payload).eq('id', id));
+    } else {
+      ({ error } = await sbClient.from('announcements').insert({ ...payload, created_by: currentProfile.id }));
+    }
+    if(error){ toast('فشل حفظ الإعلان: '+error.message,'info'); return; }
+
+    editingAnnouncementId = null;
+    toast(id ? 'تم تعديل الإعلان' : 'تم نشر الإعلان لكل المستخدمين','check');
+    navigate('admin', { sub: 'broadcast' });
+  }
+
+  async function adminDeleteAnnouncement(id){
+    if(!confirm('هل تريد حذف هذا الإعلان؟ لن يظهر بعد الآن لأي مستخدم.')) return;
+    const { error } = await sbClient.from('announcements').delete().eq('id', id);
+    if(error){ toast('فشل حذف الإعلان: '+error.message,'info'); return; }
+    toast('تم حذف الإعلان','check');
+    navigate('admin', { sub: 'broadcast' });
+  }
+
+  // ============================================================
+  // 9. MAIN RENDER
+  // ============================================================
+  async function render(){
+    await renderHeader();
+    const main = document.getElementById('main');
+    let html = '';
+    try {
+      switch(route.name){
+        case 'home': html = await pageHome(); break;
+        case 'searchResults': html = await pageSearchResults(route.params.q); break;
+        case 'result': html = await pageResult(route.params.id); break;
+        case 'auth': html = await pageAuth(); break;
+        case 'requestSwap': html = await pageRequestSwap(route.params.id); break;
+        case 'candidates': html = pageCandidates(route.params); break;
+        case 'myRequests': html = await pageMyRequests(); break;
+        case 'notifications': html = await pageNotifications(); break;
+        case 'universities': html = await pageUniversities(); break;
+        case 'hospitals': html = await pageHospitals(); break;
+        case 'admin': html = await pageAdmin(route.params.sub); break;
+        default: html = await pageHome();
+      }
+    } catch(e) {
+      html = `<div class="empty-state">حدث خطأ: ${e.message}</div>`;
+    }
+    main.innerHTML = html;
+    main.classList.remove('page-fade');
+    void main.offsetWidth;
+    main.classList.add('page-fade');
+    window.scrollTo(0,0);
+  }
+
+  // ============================================================
+  // 10. BOOT
+  // ============================================================
+  // تأكد من تحميل البروفايل عند بدء التشغيل
+  (async function init(){
+    const session = await sbClient.auth.getSession();
+    if(session.data?.session?.user){
+      currentUser = session.data.session.user;
+      const { data, error } = await sbClient
+        .from('profiles')
+        .select('*')
+        .eq('id', currentUser.id)
+        .single();
+      if(data) currentProfile = data;
+    }
+    render();
+  })();
+
+  // ============================================================
+  // 11. GLOBAL EXPOSURE
+  // ============================================================
+  window.navigate = navigate;
+  window.toggleMobileMenu = toggleMobileMenu;
+  window.closeMobileMenu = closeMobileMenu;
+  window.onSearchKey = onSearchKey;
+  window.doSearch = doSearch;
+  window.doRegister = doRegister;
+  window.doLoginExisting = doLoginExisting;
+  window.submitSwap = submitSwap;
+  window.sendSwapRequest = sendSwapRequest;
+  window.respondToSwapRequest = respondToSwapRequest;
+  window.cancelRequest = cancelRequest;
+  window.markNotificationRead = markNotificationRead;
+  window.respondFromNotification = respondFromNotification;
+  window.toggleHospNames = toggleHospNames;
+  window.adminAction = adminAction;
+  window.adminAccountAction = adminAccountAction;
+  window.adminToggleSuspend = adminToggleSuspend;
+  window.adminDeleteAccount = adminDeleteAccount;
+  window.adminEditAnnouncement = adminEditAnnouncement;
+  window.adminCancelEditAnnouncement = adminCancelEditAnnouncement;
+  window.adminSaveAnnouncement = adminSaveAnnouncement;
+  window.adminDeleteAnnouncement = adminDeleteAnnouncement;
+  window.logout = logout;
+  window.switchAuthTab = switchAuthTab;
+  window.updateTelegram = updateTelegram;
+  window.applySwapSearch = applySwapSearch;
+  window.applyOpenRequests = applyOpenRequests;
+  window.sendBulkSwapRequests = sendBulkSwapRequests;
+  window.applyHospFilter = applyHospFilter;
+  window.respondNotif = markNotificationRead; // نفس الفكرة
+
+</script>
+</body>
+</html>

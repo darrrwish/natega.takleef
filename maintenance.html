@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#0D9488" />
+  <title>الموقع في وضع الصيانة المؤقتة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --bg:#F4F8F7; --surface:#FFFFFF; --border:#DCE6E3;
+      --primary:#0D9488; --primary-dark:#0F766E; --amber:#D97706;
+      --text:#0F1E1C; --muted:#4F625E;
+      --shadow:0 1px 2px rgba(15,30,28,.05), 0 12px 36px rgba(15,30,28,.08);
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0B1514; --surface:#12201E; --border:#22362F;
+        --primary:#2DD4BF; --primary-dark:#5EEAD4; --amber:#F59E0B;
+        --text:#E8F2F0; --muted:#9DB3AE;
+        --shadow:0 1px 2px rgba(0,0,0,.4), 0 12px 36px rgba(0,0,0,.45);
+      }
+    }
+    *{ box-sizing:border-box; }
+    html,body{ margin:0; min-height:100%; }
+    body{
+      font-family:'Cairo', system-ui, -apple-system, 'Segoe UI', Tahoma, sans-serif;
+      background:
+        radial-gradient(60% 50% at 50% 0%, rgba(13,148,136,.14), transparent 70%),
+        var(--bg);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      display:flex; align-items:center; justify-content:center;
+      min-height:100vh; padding:24px 16px;
+    }
+    .card{
+      width:100%; max-width:660px;
+      background:var(--surface);
+      border:1px solid var(--border);
+      border-radius:20px;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    /* شريط الصيانة المتحرك */
+    .tape{
+      height:12px;
+      background:repeating-linear-gradient(-45deg, var(--amber) 0 14px, #1b1b1b 14px 28px);
+      background-size:40px 40px;
+      animation:slide 1.2s linear infinite;
+    }
+    @keyframes slide{ to{ background-position:40px 0; } }
+    .content{ padding:34px 30px 30px; }
+    h1{
+      margin:0 0 22px;
+      font-size:26px; line-height:1.6; font-weight:800;
+      color:var(--primary-dark);
+      text-align:center;
+    }
+    p{
+      margin:0 0 16px;
+      font-size:16.5px; line-height:2; color:var(--text);
+    }
+    p.lead{ font-weight:700; }
+    p.thanks{ font-weight:700; color:var(--primary-dark); margin-bottom:0; }
+    .divider{ height:1px; background:var(--border); margin:26px 0 22px; }
+    .follow{
+      text-align:center;
+    }
+    .follow small{
+      display:block; margin-bottom:14px;
+      color:var(--muted); font-size:14.5px; line-height:1.9;
+    }
+    .actions{ display:flex; flex-wrap:wrap; gap:10px; justify-content:center; }
+    .btn{
+      display:inline-flex; align-items:center; gap:9px;
+      padding:12px 22px; border-radius:12px;
+      font-family:inherit; font-size:15px; font-weight:700;
+      text-decoration:none; cursor:pointer; border:1px solid transparent;
+      transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+    }
+    .btn:hover{ transform:translateY(-2px); }
+    .btn:focus-visible{ outline:3px solid var(--primary); outline-offset:3px; }
+    .btn-fb{ background:#1877F2; color:#fff; box-shadow:0 6px 18px rgba(24,119,242,.28); }
+    .btn-fb:hover{ background:#1466d6; }
+    .btn-ghost{ background:transparent; color:var(--text); border-color:var(--border); }
+    .btn-ghost:hover{ background:rgba(13,148,136,.08); }
+    .btn svg{ width:20px; height:20px; flex:none; }
+
+    @media (max-width:520px){
+      .content{ padding:26px 20px 24px; }
+      h1{ font-size:21px; }
+      p{ font-size:15.5px; }
+      .btn{ width:100%; justify-content:center; }
+    }
+    @media (prefers-reduced-motion: reduce){
+      .tape{ animation:none; }
+      .btn{ transition:none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <div class="tape" aria-hidden="true"></div>
+    <div class="content">
+      <h1>الموقع ينمو بسرعة! وهو الآن في وضع الصيانة المؤقتة</h1>
+
+      <p class="lead">أهلاً بك،</p>
+
+      <p>شكراً لدعمكم الكبير! الإقبال المفاجئ على الموقع تجاوز قدرة السيرفر الحالي، وهو أكبر من قدرتي الفردية على تحمّله وحدي.</p>
+
+      <p>اضطررت لإيقاف الموقع مؤقتاً لإجراء صيانة طارئة وتحديث البنية التحتية، وسأعود في أقرب وقت وبأداء أقوى.</p>
+
+      <p class="thanks">أعتذر عن الإزعاج، وشكراً لتفهمكم وصبركم.</p>
+
+      <div class="divider" aria-hidden="true"></div>
+
+      <div class="follow">
+        <small>تابعني للاطلاع على آخر التحديثات وموعد العودة</small>
+        <div class="actions">
+          <a class="btn btn-fb" href="https://www.facebook.com/share/1DrRnXQo2E/" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.4-1.7 1.8-1.7h1.6V3.8c-.3 0-1.3-.2-2.4-.2-2.5 0-4.2 1.5-4.2 4.3v2.6H7.5v3.3h2.8V22h3.2z"/></svg>
+            تابعني على فيسبوك
+          </a>
+          <button class="btn btn-ghost" type="button" onclick="location.reload()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
+            تحديث الصفحة
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
